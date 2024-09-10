@@ -47,8 +47,8 @@ Este script está disponible bajo la licencia [nombre de la licencia]. Consulte 
 Si utiliza este script en su trabajo, por favor cite: [información de citación].
 
 ## Integrantes del equipo
-Edna Karen Rivera Zagal
-Karla Ximena González Platas
+- Edna Karen Rivera Zagal
+- Karla Ximena González Platas
 
 ## Contáctenos
 
