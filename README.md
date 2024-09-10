@@ -3,6 +3,8 @@ Hola:) esto es para probar el github desktop pero lo puedes borrar ahora lo esto
 <!-- PRIMER MODIFICACION EN GITHUB, ESTOY EDITANDO ESTO PERO ESTO ES UN TEMPLATE -->
 
 Este es un script de Python diseñado para ----------- 
+## Descripción del proyecto
+El presente proyecto tiene como propósito analizar la distribución de los fósiles en los diversos estados de México y hacer filogenias de las entidades con mayor cantidad de fósiles y de aquellas que se encuentran en la zona central del país. Para ello, se hace uso de la base de datos de la Colección Nacional de Paleontología, la cual contiene ejemplares de fósiles de plantas y animales vertebrados e invertebrados de  diferentes edades geológicas, principalmente entre el Cámbrico y el Pleistoceno. 
 
 ## Uso
 
