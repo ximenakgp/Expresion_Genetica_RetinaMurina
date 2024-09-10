@@ -1,4 +1,4 @@
-# [Nombre del proyecto]
+# Análisi paleontológico de México 
 
 Nombre: <!-- Nombre X (<email>)  -->  
 Nombre: <!-- Nombre X (<email>)  -->
