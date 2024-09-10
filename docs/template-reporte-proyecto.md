@@ -1,9 +1,9 @@
 # Análisi paleontológico de México 
 
-Nombre: <!-- Nombre X (<email>)  -->  
-Nombre: <!-- Nombre X (<email>)  -->
+Nombre: Karla Ximena González Platas 
+Nombre: Edna Karen Rivera Zagal 
 
-Fecha:  dd/mm/aaaa
+Fecha:  10/09/2024 
 
 
 ## Introducción
@@ -15,6 +15,11 @@ Fecha:  dd/mm/aaaa
 
 <!-- Describir la problemática que se presenta, la situación que motiva la realización del proyecto/análisis y que está causando posibles inconvenientes. -->
 
+El análisi de los datos paleontológicos en México es un area de investigación que ha sido muy poco explorada por la cominidad científica. Este significa que la paleontología 
+
+Sin embargo, es importante retomar este análisis de los restoso fósiles que se han descubierto en el territorio nacional, ya que apartir de el, es posible conocer la basta diversidad de organismo que habitaron en nuestro territorio, la relación filogenética que tinen unos con otros y de esta manera poder ver la evolución que han tenido las especies en regiónes específicas del país.
+
+Generar este nuevo conocimiento es de gran utilidad 
 
 ## Metodología
 
