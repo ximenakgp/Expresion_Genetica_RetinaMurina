@@ -1,6 +1,4 @@
-# Nombre del Programa 
-Hola:) esto es para probar el github desktop pero lo puedes borrar ahora lo estoy editando desde el remoto (internet) pero igual se puede borrar, yeeei si bajó al local, ahora estoy editandod desde desktop 
-<!-- PRIMER MODIFICACION EN GITHUB, ESTOY EDITANDO ESTO PERO ESTO ES UN TEMPLATE -->
+# Proyecto de Paleontología
 
 Este es un script de Python diseñado para ----------- 
 ## Descripción del proyecto
