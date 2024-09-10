@@ -46,6 +46,10 @@ Este script está disponible bajo la licencia [nombre de la licencia]. Consulte 
 
 Si utiliza este script en su trabajo, por favor cite: [información de citación].
 
+## Integrantes del equipo
+Edna Karen Rivera Zagal
+Karla Ximena González Platas
+
 ## Contáctenos
 
-Si tiene problemas o preguntas, por favor abra un problema en este repositorio o póngase en contacto con nosotros en: [información de contacto].
+Si tiene problemas o preguntas, por favor abra un problema en este repositorio o póngase en contacto con nosotros en: [ximenagp@lcg.unam.mx][ednakrz@lcg.unam.mx].
