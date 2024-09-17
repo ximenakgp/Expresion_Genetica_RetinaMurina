@@ -15,7 +15,7 @@ Fecha:  10/09/2024
 
 <!-- Describir la problemática que se presenta, la situación que motiva la realización del proyecto/análisis y que está causando posibles inconvenientes. -->
 
-El análisi de los datos paleontológicos en México es un area de investigación que ha sido muy poco explorada por la cominidad científica. Este significa que la paleontología 
+El análisi de los datos paleontológicos en México es un area de investigación que ha sido muy poco explorada por la cominidad científica. A pesar de que la palontología es un área de investigación de suma importancia, ya que gracias a su estudio es que podemos conocer el pasado de los seres vivios que habitaron nuestro territorio nacional, permitiendonos conocer la evolución e historia de los organismos que estuvieron antes de los que ahora habitan dentro de la república. 
 
 Sin embargo, es importante retomar este análisis de los restoso fósiles que se han descubierto en el territorio nacional, ya que apartir de el, es posible conocer la basta diversidad de organismo que habitaron en nuestro territorio, la relación filogenética que tinen unos con otros y de esta manera poder ver la evolución que han tenido las especies en regiónes específicas del país.
 
