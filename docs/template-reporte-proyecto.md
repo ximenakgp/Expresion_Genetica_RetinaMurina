@@ -19,6 +19,14 @@ El análisi de los datos paleontológicos en México es un area de investigació
 
 Sin embargo, es importante retomar este análisis de los restoso fósiles que se han descubierto en el territorio nacional, ya que apartir de el, es posible conocer la basta diversidad de organismo que habitaron en nuestro territorio, la relación filogenética que tinen unos con otros y de esta manera poder ver la evolución que han tenido las especies en regiónes específicas del país.
 
+**Preguntas de investigación**  
+
+1. Analizar la distribución de los fósiles en los diversos estados, para determinar cual es el estado con la mayor cantidad de ellos y evaluar a que se debe esto. 
+
+2. Hacer filogenias de las entidades con mayor cantidad de fósiles. En este caso planeamos utilizar los nombres de los organismos, obtenidos por estados a partir del primer punto, y buscarlos en NCBI (con esearch) para posteriormente obtener sus IDs y buscar su información en la base de datos UnitProt y así poder hacer una filogénia. Todavía no tenemos claro que gen podríamos comparar pero buscamos esclarecerlo con la clasificación de los organismos por estado. 
+
+3. La otra opción en la que pensamos es utilizar los datos de taxonomia de los organismos encontrados en la entidad con mayor cantidad de fósiles, para analizar que nos puede decir esto acerca de su historia evolutiva y de como ha ido cambiado el habitat y la distribución de esos organismos  a lo largo del tiempo, dado que estos datos son fósiles de diferentes edades geológicas principalmente entre el Cámbrico y el Pleistoceno. 
+
 Generar este nuevo conocimiento es de gran utilidad (falta por terminar de tunear jajajaj)  
 
 ## Metodología
