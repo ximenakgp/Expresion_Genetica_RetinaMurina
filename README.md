@@ -1,4 +1,4 @@
-# Analisis paleontológico de México 
+# Análisis paleontológico de México 
 
 Este es un script de Python diseñado para ----------- 
 ## Descripción del proyecto
