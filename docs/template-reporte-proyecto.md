@@ -8,8 +8,8 @@ Fecha:  10/09/2024
 
 ## Introducción
 
-<!-- [Describir los antecedentes que ayuden a comprender el proyecto a desarrollar, o bien el análisis que se requiere llevar a cabo, incluyendo términos o definiciones, e imágenes relacionados a este. Esta sección, permite el usuario tener la noción del tema que se va a bordar en el resto del documento. -->
-
+La Colección Nacional de Paleontología del Instituto de Geología de la Universidad Nacional Autónoma de México tiene catalogada la colección de fósiles mexicanos más valiosa en cuanto a número de ejemplares y diversidad de taxa recolectados a lo largo de más de un siglo.
+El presente proyecto tiene como propósito analizar la distribución de los fósiles en los diversos estados de México y hacer filogenias de las entidades con mayor cantidad de fósiles y de aquellas que se encuentran en la zona central del país. Para ello, se hace uso de la base de datos de la Colección Nacional de Paleontología, la cual contiene ejemplares de fósiles de plantas y animales vertebrados e invertebrados de  diferentes edades geológicas, principalmente entre el Cámbrico y el Pleistoceno. 
 
 ## Planteamiento del problema
 
