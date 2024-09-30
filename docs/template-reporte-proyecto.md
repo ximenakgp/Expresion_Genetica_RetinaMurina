@@ -29,7 +29,7 @@ Con este fin se analizarán los datos  obtenidos de la base de datos GEO(Gene Ex
 Con el estudio de estos datos se busca contribuir a la disminución de la falta de análisis en los procesos de expresión genética en la biología espacial y conocer la relación de los procesos moleculares que tienen los ratones con las enfermedades retinales desarrolladas en el orbe. 
 
 ## Preguntas de investigación 
-Las preguntas de investigación que proponemos para el análisi de los datos son las sigueintes: 
+Las preguntas de investigación que proponemos para el análisis de los datos son las siguientes: 
 
 1. ¿Qué procesos biológicos y funciones están alterados en los genes regulados positivamente en la retina murina durante la exposición al vuelo espacial, y cómo podrían estos cambios influir en la adaptación de la retina a las condiciones espaciales?
 
