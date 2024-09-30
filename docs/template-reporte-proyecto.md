@@ -1,12 +1,16 @@
 # Influencia de los vuelos espaciales en la expresión genética de la retina murina  
 
-Nombre: Karla Ximena González Platas 
-Nombre: Edna Karen Rivera Zagal 
+Nombre: Karla Ximena González Platas (<ximenagp@lcg.unam.mx>)
+ 
+Nombre: Edna Karen Rivera Zagal (<ednakrz@lcg.unam.mx>)
 
 Fecha:  10/09/2024 
 
 
 ## Introducción
+
+https://utec.edu.pe/sites/default/files/styles/blog_full/public/blog_ratti_imb_principal.jpg
+
 Actualmente, una parte de la humanidad está cautivada por la era de la exploración espacial, convirtiendo este ámbito en una oportunidad de negocio para numerosas empresas privadas. Sin embargo, la investigación científica en esta área es igualmente crucial, ya que el éxito comercial y el avance tecnológico dependen uno del otro. Un ejemplo de ello son las misiones espaciales que se han estado preparando en los últimos años, como los planes para establecer asentamientos permanentes en la Luna o llevar a cabo misiones tripuladas a Marte.
 
 El entorno espacial presenta condiciones muy diferentes a las de la Tierra, lo que conlleva una serie de estresores fisiológicos únicos, como la microgravedad y la radiación ionizante, cuyos efectos aún no se comprenden completamente y representan desafíos significativos para las misiones de larga duración. Uno de los principales problemas identificados es el deterioro del funcionamiento ocular después de la exposición al entorno espacial, así como los cambios en la estructura y función de la retina.
