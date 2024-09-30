@@ -84,7 +84,7 @@ Los datos de entrada fueron descargados desde NCBI y se encuentran en RUTA DE LA
 
 #### Formato de los archivos
 
-<!-- 
+
 
 - ` GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt` : formato tsv
 
@@ -158,7 +158,6 @@ Respuesta: Describir el trabajo que implica o pasos a seguir para resolver esta 
 
 
 
--->
 
 
 ## Resultados
