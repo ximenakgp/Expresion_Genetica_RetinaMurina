@@ -75,7 +75,7 @@ Los datos de entrada fueron descargados desde NCBI y se encuentran en RUTA DE LA
 
 > Fecha de descarga: 25/09/2024
 
->| Archivo | Descripción  | Tipo |
+| Archivo | Descripción  | Tipo |
 |:--      |:--           |:--  |
 | GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt  | medidas de abundancia normalizada específicas para los genes diferencialmente expresados (DEGs) de los ratones  | Formato tsv |
 
