@@ -50,6 +50,11 @@ El script incluye un conjunto de pruebas unitarias. Puede ejecutar estas pruebas
 
 ## Datos
 
+Los datos utilizados para este proyecto fueron obtenidos del noveno experimento de investigación de roedores de la NASA (RR-9), en el cual se llevaron ratones macho adultos C57BL/6 de diez semanas a bordo de la ISS durante 35 días y regresaron vivos a la Tierra, horas después a su amerizaje se recogieron tejidos oculares de los ratones para su análisis. Además se utilizaron ratones de control en tierra con condiciones ambientales idénticas. 
+
+Utilizando RNA sequencing se detectaron 600 genes expresados diferencialmente (DEGs)  entre los grupos de vuelo espacial y control terrestre utilizando DESeq2. Dentro de los DEGs encontrados, se obtuvo que el grupo de vuelo espacial tuvo 286 genes regulados positivamente y 314 genes regulados negativamente en comparación con el control terrestre. Además se encontraron 75 genes asociados con la retinitis pigmentosa de los cuales se obtuvieron 12 que se expresaban de forma diferencial, siendo un resultado relevante para analizar esta enfermedad asociada a la retina.
+
+Los conjuntos de datos generados y analizados durante el estudio están disponibles en el repositorio GEO, bajo el identificador de acceso GSE131954.
 
 ## Metadatos y documentación
 
