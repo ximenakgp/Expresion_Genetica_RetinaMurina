@@ -39,16 +39,16 @@ Las preguntas de investigación que proponemos para el análisi de los datos son
 
 ## Metodología
 
-<!-- [Identificar y describir los diferentes datos de entrada con los que se cuenta, así como de dónde fueron descargados, el formato de los mismos, y las columnas con las que cuenta. Especificar si se utilizará un servidor en particular para trabajar, o herramientas para el desarrollo de la solución del análsis. Formular las preguntas biológicas que se busca resolver con el análisis de los datos para determinar las tareas a realizar por cada una de ellas.]
+<!-- [Identificar y describir los diferentes datos de entrada con los que se cuenta, así como de dónde fueron descargados, el formato de los mismos, y las columnas con las que cuenta. Especificar si se utilizará un servidor en particular para trabajar, o herramientas para el desarrollo de la solución del análsis. Formular las preguntas biológicas que se busca resolver con el análisis de los datos para determinar las tareas a realizar por cada una de ellas.] -->
 
 
 ### A. Servidor y software
 
-> Servidor: 
+> Servidor: Servidor de la Licenciatura en Ciencias Genómicas de la UNAM campus Morelos. 
 
-> Usuario: 
+> Usuario: ednakrz  y ximenagp 
 
-> Software: 
+> Software: Chaac 
 
 ### B. Datos de Entrada 
 
@@ -57,14 +57,16 @@ Entendiendo los archivos de datos
 Los datos de entrada fueron descargados desde NCBI y se encuentran en RUTA DE LA CARPETA.
 
 ```
-|-- data
-|   |-- coli_genomic.fna
-|   |-- coli.gff
-|   |-- coli_protein.fna
-|   |-- directorio.txt
-|   `-- flagella_genes.txt
+.
+├── Datos_complementarios
+│   ├── archivo_prueba.txt
+│   ├── DEGS_ProteinClasses.xlsx
+│   └── Gene_Disease_Associations.xlsx
+├── GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt
+├── GSE131954_DESeq_RR9_Ground_Ctrl_vs_Flight_All.txt
+└── T.txt
 ```
--->
+
 
 #### Metadatos de la carpeta de datos
 
