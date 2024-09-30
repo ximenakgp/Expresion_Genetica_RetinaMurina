@@ -63,7 +63,6 @@ Los datos de entrada fueron descargados desde NCBI y se encuentran en RUTA DE LA
 │   ├── DEGS_ProteinClasses.xlsx
 │   └── Gene_Disease_Associations.xlsx
 ├── GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt
-├── GSE131954_DESeq_RR9_Ground_Ctrl_vs_Flight_All.txt
 └── T.txt
 ```
 
@@ -77,7 +76,7 @@ Los datos de entrada fueron descargados desde NCBI y se encuentran en RUTA DE LA
 
 | Archivo | Descripción  | Tipo |
 |:--      |:--           |:--  |
-| GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt  | medidas de abundancia normalizada específicas para los genes diferencialmente expresados (DEGs) de los ratones  | Formato tsv |
+| GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt  | Medidas de abundancia normalizada específicas para los genes diferencialmente expresados (DEGs) de los ratones espaciales | Formato tsv |
 
 
 
@@ -103,58 +102,35 @@ RefSeq Symbol	baseMean	log2FoldChange	lfcSE	stat	pvalue	padj
 
 Formato: 
 
-> a. La primera línea es información de la secuencia. Primero viene el identificador del genoma.
-
-> b. Después vienen varias líneas con la secuencia de nuclótidos del genoma completo.
-
-
-
-- `coli.gff`: anotación de features en el genoma
-
-
-El contenido del archivo es:
-
-```
-##gff-version 3
-#!gff-spec-version 1.21
-#!processor NCBI annotwriter
-#!genome-build ASM584v2
-#!genome-build-accession NCBI_Assembly:GCF_000005845.2
-##sequence-region NC_000913.3 1 4641652
-##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=511145
-
-NC_000913.3     RefSeq  region  1       4641652 .       +       .       ID=NC_000913.3:1.>
-NC_000913.3     RefSeq  gene    190     255     .       +       .       ID=gene-b0001;Dbx>
-NC_000913.3     RefSeq  CDS     190     255     .       +       0       ID=cds-NP_414542.>
-NC_000913.3     RefSeq  gene    337     2799    .       +       .       ID=gene-b0002;Dbx>
-NC_000913.3     RefSeq  CDS     337     2799    .       +       0       ID=cds-NP_414543.>
-
-```
-
-Formato: 
-
-> a. Es un formato gff tabular, es decir, cada dato es separado por tabulador.
-> 
-> b. Cada renglón en el formato gff es una elemento genético anotado en el genoma, que se le denomina `feature`, éstos features pueden ser genes, secuencias de inserción, promotores, sitios de regulación, todo aquello que este codificado en el DNA y ocupe una región en el genoma de  E. coli.
-
-> c. Los atributos de cada columna par cada elemento genético son
-
->```
-1. seqname. Nombre del cromosoma
-2. source. Nombre del programa que generó ese elemento
-3. feature. Tipo de elemento
-4. start. Posición de inicio
-5. end. Posición de final
-6. score. Un valor de punto flotante
-7. strand. La cadena (+ , - )
-8. frame. Marco de lectura
-9.  attribute. Pares tag-value, separados por coma, que proveen información adicional
-```
+DESeq2 es una herramienta que utiliza métodos estadísticos para analizar y normalizar datos de RNA-seq
+> a. La primera línea es información del análisis de DESeq2.
+> -Los atributos de cada columna son: 
+>   1) Identificadores de transcripción
+>   2) Valores medios base
+>   3) Log 2 (cambio de pliegue)
+>   4) Valores de error estándar (IfcSE)
+>   5) Valores estadísticos de Wald
+>   6) Valores P de la prueba de Wald
+>   7) Valores P ajustados (padj)
 
 
 #### Preguntas de investigación
-> ¿Pregunta X?
-Respuesta: Describir el trabajo que implica o pasos a seguir para resolver esta pregunta.
+
+En este contexto, se plantean dos principales preguntas de investigación prioritarias: 
+
+> 1. ¿Qué procesos biológicos y funciones están alterados en los genes regulados positivamente en la retina murina durante la exposición al vuelo espacial, y cómo podrían estos cambios influir en la adaptación de la retina a las condiciones espaciales?
+Para responder a esta pregunta, se realizará una anotación funcional de los genes regulados positivamente, con el objetivo de identificar los procesos biológicos alterados y comprender cómo estos cambios impactan la expresión genética en la retina.
+> 2. ¿Qué vías biológicas y categorías funcionales se encuentran sobrerrepresentadas entre los genes regulados positivamente en la retina murina en respuesta a la exposición al vuelo espacial?
+Se llevará a cabo un análisis de sobrerrepresentación (ORA) para los genes regulados positivamente, lo cual permitirá identificar las vías y respuestas biológicas favorecidas como consecuencia de la exposición a las condiciones espaciales.
+
+ Además, se explorarán dos preguntas adicionales que complementarán y enriquecerán el enfoque del proyecto:
+
+ > 3. ¿Cuáles de los 75 genes asociados con la retinitis pigmentosa muestran una regulación positiva en la retina murina durante la exposición al vuelo espacial y qué implicaciones podrían tener estos genes para la progresión de esta enfermedad bajo condiciones espaciales?
+Esta pregunta permitirá evaluar si los genes vinculados con la retinitis pigmentosa se ven afectados por el entorno espacial, lo cual podría proporcionar nuevas perspectivas sobre la progresión de la enfermedad en este tipo de ambiente.
+ > 4. ¿Cuáles son los factores de transcripción expresados ​​diferencialmente (DETF) que están regulados positivamente y qué implicaciones tienen en la expresión genética de la retina murina?
+Dado que de los 600 genes expresados ​​diferencialmente (DEG), 29 son factores de transcripción, esta pregunta busca identificar cuáles de estos DETF están regulados positivamente y cómo podrían influir en la regulación general de la expresión genética en la retina bajo condiciones espaciales.
+
+Estas preguntas de investigación contribuirán a comprender las adaptaciones de la retina murina frente a los desafíos del entorno espacial, con especial énfasis en los genes regulados positivamente y sus funciones biológicas.
 
 
 
