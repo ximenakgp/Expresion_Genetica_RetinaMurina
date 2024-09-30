@@ -66,7 +66,7 @@ Los conjuntos de datos generados y analizados durante el estudio están disponib
 
 ## Términos de uso
 
-Este script está disponible bajo la licencia [nombre de la licencia]. Consulte el archivo LICENSE para obtener más detalles.
+Este script está disponible bajo la licencia [MIT]. Consulte el archivo LICENSE para obtener más detalles.
 
 ## Como citar
 
