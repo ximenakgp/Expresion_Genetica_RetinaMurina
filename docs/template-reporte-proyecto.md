@@ -20,11 +20,13 @@ Por esta razón, es fundamental llevar a cabo estudios que permitan comprender e
 
 ## Planteamiento del problema
 
-<!-- Describir la problemática que se presenta, la situación que motiva la realización del proyecto/análisis y que está causando posibles inconvenientes. -->
+A pesar de los grandes esfuerzos que la comunidad científica está haciendo por analizar los cambios fisiológicos de organismos modelo en condiciones espaciales, para la seguridad de las futuras misiones, aún queda mucho trabajo por hacer en el área de la biología molecular.
 
-El análisi de los datos paleontológicos en México es un area de investigación que ha sido muy poco explorada por la cominidad científica. A pesar de que la palontología es un área de investigación de suma importancia, ya que gracias a su estudio es que podemos conocer el pasado de los seres vivios que habitaron nuestro territorio nacional, permitiendonos conocer la evolución e historia de los organismos que estuvieron antes de los que ahora habitan dentro de la república. 
+Así como el estudio de la morfología de la retina murina, es imperativo analizar la expresión genética que tiene nuestro organismo modelo en condiciones espaciales, para saber los procesos celulares que se activan bajo estas condiciones y su relación con el posible daño oxidativo a la estructura ocular. 
 
-Sin embargo, es importante retomar este análisis de los restoso fósiles que se han descubierto en el territorio nacional, ya que apartir de el, es posible conocer la basta diversidad de organismo que habitaron en nuestro territorio, la relación filogenética que tinen unos con otros y de esta manera poder ver la evolución que han tenido las especies en regiónes específicas del país.
+Con este fin se analizarán los datos  obtenidos de la base de datos GEO(Gene Expression Omnibus), bajo el identificador de acceso GSE131954, los cuales contienen medidas de abundancia normalizada específicas para los genes diferencialmente expresados (DEGs) de los ratones espaciales.  
+
+Con el estudio de estos datos se busca contribuir a la disminución de la falta de análisis en los procesos de expresión genética en la biología espacial y conocer la relación de los procesos moleculares que tienen los ratones con las enfermedades retinales desarrolladas en el orbe. 
 
 **Preguntas de investigación**  
 
