@@ -28,15 +28,14 @@ Con este fin se analizarán los datos  obtenidos de la base de datos GEO(Gene Ex
 
 Con el estudio de estos datos se busca contribuir a la disminución de la falta de análisis en los procesos de expresión genética en la biología espacial y conocer la relación de los procesos moleculares que tienen los ratones con las enfermedades retinales desarrolladas en el orbe. 
 
-**Preguntas de investigación**  
+## Preguntas de investigación 
+Las preguntas de investigación que proponemos para el análisi de los datos son las sigueintes: 
 
-1. Analizar la distribución de los fósiles en los diversos estados, para determinar cual es el estado con la mayor cantidad de ellos y evaluar a que se debe esto. 
+1. ¿Qué procesos biológicos y funciones están alterados en los genes regulados positivamente en la retina murina durante la exposición al vuelo espacial, y cómo podrían estos cambios influir en la adaptación de la retina a las condiciones espaciales?
 
-2. Hacer filogenias de las entidades con mayor cantidad de fósiles. En este caso planeamos utilizar los nombres de los organismos, obtenidos por estados a partir del primer punto, y buscarlos en NCBI (con esearch) para posteriormente obtener sus IDs y buscar su información en la base de datos UnitProt y así poder hacer una filogénia. Todavía no tenemos claro que gen podríamos comparar pero buscamos esclarecerlo con la clasificación de los organismos por estado. 
+2. ¿Qué vías biológicas y categorías funcionales se encuentran sobrerrepresentadas entre los genes regulados positivamente en la retina murina en respuesta a la exposición al vuelo espacial?
 
-3. La otra opción en la que pensamos es utilizar los datos de taxonomia de los organismos encontrados en la entidad con mayor cantidad de fósiles, para analizar que nos puede decir esto acerca de su historia evolutiva y de como ha ido cambiado el habitat y la distribución de esos organismos  a lo largo del tiempo, dado que estos datos son fósiles de diferentes edades geológicas principalmente entre el Cámbrico y el Pleistoceno. 
-
-Generar este nuevo conocimiento es de gran utilidad (falta por terminar de tunear jajajaj)  
+3. ¿Cuáles de los 75 genes asociados con la retinitis pigmentosa muestran una regulación positiva en la retina murina durante la exposición al vuelo espacial y qué implicaciones podrían tener estos genes para la progresión de esta enfermedad bajo condiciones espaciales?
 
 ## Metodología
 
