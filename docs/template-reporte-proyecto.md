@@ -70,33 +70,35 @@ Los datos de entrada fueron descargados desde NCBI y se encuentran en RUTA DE LA
 
 #### Metadatos de la carpeta de datos
 
-<!-- 
+
 > Versión/Identificador del genoma:  NC_000913.3
 
-> Fecha de descarga: dd/mm/aaaa
+> Fecha de descarga: 25/09/2024
 
 >| Archivo | Descripción  | Tipo |
 |:--      |:--           |:--  |
-| coli_genomic.fna  | Secuencia de nucleotidos de E. coli  | Formato FastA |
-| coli.gff.   | Anotación del genoma de E. coli  | Formato gff |
-| coli_protein.faa | Secuencia de aminoacidos de las proteinas de E. coli | formato FastA|
-| flagella_genes.txt | Genes con función relacionada al flagello en E. coli | lista |
-| directorio.txt. | Archivo con nombres de personas | lista |
+| GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt  | medidas de abundancia normalizada específicas para los genes diferencialmente expresados (DEGs) de los ratones  | Formato tsv |
 
--->
+
+
 
 #### Formato de los archivos
 
 <!-- 
 
-- `coli_genomic.fna` : formato FastA
+- ` GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt` : formato tsv
 
 
 ```
->NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete genome
-AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGCTTCTGAACTG
-GTTACCTGCCGTGAGTAAATTAAAATTTTATTGACTTAGGTCACTAAATACTTTAACCAATATAGGCATAGCGCACAGAC
-AGATAAAAATTACAGAGTACACAACATCCATGAAACGCATTAGCACCACCATTACCACCACCATCACCATTACCACAGGT
+RefSeq Symbol	baseMean	log2FoldChange	lfcSE	stat	pvalue	padj
+1110002L01Rik	756.7442416	0.214392751	0.056488755	3.795317318	0.000147455	0.007749727
+1110038D17Rik	559.5329736	0.196306528	0.056424089	3.479126231	0.000503052	0.01965955
+1200016B10Rik	295.1970385	0.239538839	0.066717953	3.590320548	0.000330272	0.014560608
+1300018I17Rik	242.7758952	-0.221981787	0.072266793	-3.07169834	0.002128447	0.055386346
+1500004A13Rik	130.6192251	0.368513591	0.08898661	4.141225176	3.45E-05	0.002676788
+1700027L20Rik	54.56851159	-0.954960107	0.179418409	-5.322531361	1.02E-07	2.02E-05
+1700029J07Rik	230.7086566	0.299339956	0.088130097	3.396568987	0.000682364	0.024595056
+
 ```
 
 Formato: 
