@@ -80,7 +80,7 @@ Los datos de entrada fueron descargados desde NCBI y se encuentran en RUTA DE LA
 #### Metadatos de la carpeta de datos
 
 
-> Versión/Identificador del genoma:  NC_000913.3
+> Versión/Identificador Adhesión GEO: GSE131954
 
 > Fecha de descarga: 25/09/2024
 
