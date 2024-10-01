@@ -28,133 +28,100 @@ Con este fin se analizarán los datos  obtenidos de la base de datos GEO(Gene Ex
 
 Con el estudio de estos datos se busca contribuir a la disminución de la falta de análisis en los procesos de expresión genética en la biología espacial y conocer la relación de los procesos moleculares que tienen los ratones con las enfermedades retinales desarrolladas en el orbe. 
 
-## Preguntas de investigación 
-Las preguntas de investigación que proponemos para el análisi de los datos son las sigueintes: 
 
-1. ¿Qué procesos biológicos y funciones están alterados en los genes regulados positivamente en la retina murina durante la exposición al vuelo espacial, y cómo podrían estos cambios influir en la adaptación de la retina a las condiciones espaciales?
+## Preguntas de investigación
 
-2. ¿Qué vías biológicas y categorías funcionales se encuentran sobrerrepresentadas entre los genes regulados positivamente en la retina murina en respuesta a la exposición al vuelo espacial?
+En este contexto, se plantean dos principales preguntas de investigación prioritarias: 
 
-3. ¿Cuáles de los 75 genes asociados con la retinitis pigmentosa muestran una regulación positiva en la retina murina durante la exposición al vuelo espacial y qué implicaciones podrían tener estos genes para la progresión de esta enfermedad bajo condiciones espaciales?
+> 1. ¿Qué procesos biológicos y funciones están alterados en los genes regulados positivamente en la retina murina durante la exposición al vuelo espacial, y cómo podrían estos cambios influir en la adaptación de la retina a las condiciones espaciales?
+Para responder a esta pregunta, se realizará una anotación funcional de los genes regulados positivamente, con el objetivo de identificar los procesos biológicos alterados y comprender cómo estos cambios impactan la expresión genética en la retina.
+> 2. ¿Qué vías biológicas y categorías funcionales se encuentran sobrerrepresentadas entre los genes regulados positivamente en la retina murina en respuesta a la exposición al vuelo espacial?
+Se llevará a cabo un análisis de sobrerrepresentación (ORA) para los genes regulados positivamente, lo cual permitirá identificar las vías y respuestas biológicas favorecidas como consecuencia de la exposición a las condiciones espaciales.
+
+ Además, se explorarán dos preguntas adicionales que complementarán y enriquecerán el enfoque del proyecto:
+
+ > 3. ¿Cuáles de los 75 genes asociados con la retinitis pigmentosa muestran una regulación positiva en la retina murina durante la exposición al vuelo espacial y qué implicaciones podrían tener estos genes para la progresión de esta enfermedad bajo condiciones espaciales?
+Esta pregunta permitirá evaluar si los genes vinculados con la retinitis pigmentosa se ven afectados por el entorno espacial, lo cual podría proporcionar nuevas perspectivas sobre la progresión de la enfermedad en este tipo de ambiente.
+ > 4. ¿Cuáles son los factores de transcripción expresados ​​diferencialmente (DETF) que están regulados positivamente y qué implicaciones tienen en la expresión genética de la retina murina?
+Dado que de los 600 genes expresados ​​diferencialmente (DEG), 29 son factores de transcripción, esta pregunta busca identificar cuáles de estos DETF están regulados positivamente y cómo podrían influir en la regulación general de la expresión genética en la retina bajo condiciones espaciales.
+
+Estas preguntas de investigación contribuirán a comprender las adaptaciones de la retina murina frente a los desafíos del entorno espacial, con especial énfasis en los genes regulados positivamente y sus funciones biológicas.
+
 
 ## Metodología
 
-<!-- [Identificar y describir los diferentes datos de entrada con los que se cuenta, así como de dónde fueron descargados, el formato de los mismos, y las columnas con las que cuenta. Especificar si se utilizará un servidor en particular para trabajar, o herramientas para el desarrollo de la solución del análsis. Formular las preguntas biológicas que se busca resolver con el análisis de los datos para determinar las tareas a realizar por cada una de ellas.]
+<!-- [Identificar y describir los diferentes datos de entrada con los que se cuenta, así como de dónde fueron descargados, el formato de los mismos, y las columnas con las que cuenta. Especificar si se utilizará un servidor en particular para trabajar, o herramientas para el desarrollo de la solución del análsis. Formular las preguntas biológicas que se busca resolver con el análisis de los datos para determinar las tareas a realizar por cada una de ellas.] -->
 
 
 ### A. Servidor y software
 
-> Servidor: 
+> Servidor: Servidor de la Licenciatura en Ciencias Genómicas de la UNAM campus Morelos. 
 
-> Usuario: 
+> Usuario: ednakrz  y ximenagp 
 
-> Software: 
+> Software: Chaac 
 
 ### B. Datos de Entrada 
-
-Entendiendo los archivos de datos 
 
 Los datos de entrada fueron descargados desde NCBI y se encuentran en RUTA DE LA CARPETA.
 
 ```
-|-- data
-|   |-- coli_genomic.fna
-|   |-- coli.gff
-|   |-- coli_protein.fna
-|   |-- directorio.txt
-|   `-- flagella_genes.txt
+/home/ednakrz/BioPython/Proyecto_ExpresionMurina/Expresion_Genetica_RetinaMurina/data
+.
+├── Datos_complementarios
+│   ├── archivo_prueba.txt
+│   ├── DEGS_ProteinClasses.xlsx
+│   └── Gene_Disease_Associations.xlsx
+├── GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt
+└── T.txt
 ```
--->
+
 
 #### Metadatos de la carpeta de datos
 
-<!-- 
-> Versión/Identificador del genoma:  NC_000913.3
 
-> Fecha de descarga: dd/mm/aaaa
+> Versión/Identificador Adhesión GEO: GSE131954
 
->| Archivo | Descripción  | Tipo |
+> Fecha de descarga: 25/09/2024
+
+| Archivo | Descripción  | Tipo |
 |:--      |:--           |:--  |
-| coli_genomic.fna  | Secuencia de nucleotidos de E. coli  | Formato FastA |
-| coli.gff.   | Anotación del genoma de E. coli  | Formato gff |
-| coli_protein.faa | Secuencia de aminoacidos de las proteinas de E. coli | formato FastA|
-| flagella_genes.txt | Genes con función relacionada al flagello en E. coli | lista |
-| directorio.txt. | Archivo con nombres de personas | lista |
+| GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt  | Medidas de abundancia normalizada específicas para los genes diferencialmente expresados (DEGs) de los ratones espaciales | Formato tsv |
 
--->
+
+
 
 #### Formato de los archivos
 
-<!-- 
 
-- `coli_genomic.fna` : formato FastA
+
+- ` GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt` : formato tsv
 
 
 ```
->NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete genome
-AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGCTTCTGAACTG
-GTTACCTGCCGTGAGTAAATTAAAATTTTATTGACTTAGGTCACTAAATACTTTAACCAATATAGGCATAGCGCACAGAC
-AGATAAAAATTACAGAGTACACAACATCCATGAAACGCATTAGCACCACCATTACCACCACCATCACCATTACCACAGGT
-```
-
-Formato: 
-
-> a. La primera línea es información de la secuencia. Primero viene el identificador del genoma.
-
-> b. Después vienen varias líneas con la secuencia de nuclótidos del genoma completo.
-
-
-
-- `coli.gff`: anotación de features en el genoma
-
-
-El contenido del archivo es:
-
-```
-##gff-version 3
-#!gff-spec-version 1.21
-#!processor NCBI annotwriter
-#!genome-build ASM584v2
-#!genome-build-accession NCBI_Assembly:GCF_000005845.2
-##sequence-region NC_000913.3 1 4641652
-##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=511145
-
-NC_000913.3     RefSeq  region  1       4641652 .       +       .       ID=NC_000913.3:1.>
-NC_000913.3     RefSeq  gene    190     255     .       +       .       ID=gene-b0001;Dbx>
-NC_000913.3     RefSeq  CDS     190     255     .       +       0       ID=cds-NP_414542.>
-NC_000913.3     RefSeq  gene    337     2799    .       +       .       ID=gene-b0002;Dbx>
-NC_000913.3     RefSeq  CDS     337     2799    .       +       0       ID=cds-NP_414543.>
+RefSeq Symbol	baseMean	log2FoldChange	lfcSE	stat	pvalue	padj
+1110002L01Rik	756.7442416	0.214392751	0.056488755	3.795317318	0.000147455	0.007749727
+1110038D17Rik	559.5329736	0.196306528	0.056424089	3.479126231	0.000503052	0.01965955
+1200016B10Rik	295.1970385	0.239538839	0.066717953	3.590320548	0.000330272	0.014560608
+1300018I17Rik	242.7758952	-0.221981787	0.072266793	-3.07169834	0.002128447	0.055386346
+1500004A13Rik	130.6192251	0.368513591	0.08898661	4.141225176	3.45E-05	0.002676788
+1700027L20Rik	54.56851159	-0.954960107	0.179418409	-5.322531361	1.02E-07	2.02E-05
+1700029J07Rik	230.7086566	0.299339956	0.088130097	3.396568987	0.000682364	0.024595056
 
 ```
 
 Formato: 
 
-> a. Es un formato gff tabular, es decir, cada dato es separado por tabulador.
-> 
-> b. Cada renglón en el formato gff es una elemento genético anotado en el genoma, que se le denomina `feature`, éstos features pueden ser genes, secuencias de inserción, promotores, sitios de regulación, todo aquello que este codificado en el DNA y ocupe una región en el genoma de  E. coli.
-
-> c. Los atributos de cada columna par cada elemento genético son
-
->```
-1. seqname. Nombre del cromosoma
-2. source. Nombre del programa que generó ese elemento
-3. feature. Tipo de elemento
-4. start. Posición de inicio
-5. end. Posición de final
-6. score. Un valor de punto flotante
-7. strand. La cadena (+ , - )
-8. frame. Marco de lectura
-9.  attribute. Pares tag-value, separados por coma, que proveen información adicional
-```
-
-
-#### Preguntas de investigación
-> ¿Pregunta X?
-Respuesta: Describir el trabajo que implica o pasos a seguir para resolver esta pregunta.
-
-
-
--->
+DESeq2 es una herramienta que utiliza métodos estadísticos para analizar y normalizar datos de RNA-seq
+> a. La primera línea es información del análisis de DESeq2.
+ > -Los atributos de cada columna son: 
+>   1) Identificadores de transcripción
+>   2) Valores medios base
+>   3) Log 2 (cambio de pliegue)
+>   4) Valores de error estándar (IfcSE)
+>   5) Valores estadísticos de Wald
+>   6) Valores P de la prueba de Wald
+>   7) Valores P ajustados (padj)
 
 
 ## Resultados
