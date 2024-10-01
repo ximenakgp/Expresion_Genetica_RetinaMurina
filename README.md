@@ -81,7 +81,7 @@ Este script está disponible bajo la licencia [MIT]. Consulte el archivo LICENSE
 
 ## Como citar
 
-Si utiliza este script en su trabajo, por favor cite: [información de citación].
+Si utiliza este script en su trabajo, por favor cite: [González,K.& Rivera,E.(2024)Expresion_Genetica_RetinaMurina. GitHub.https://github.com/ximenakgp/Expresion_Genetica_RetinaMurina.git].
 
 ## Integrantes del equipo
 - Edna Karen Rivera Zagal
