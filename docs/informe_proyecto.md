@@ -115,7 +115,7 @@ Formato:
 
 DESeq2 es una herramienta que utiliza métodos estadísticos para analizar y normalizar datos de RNA-seq
 > a. La primera línea es información del análisis de DESeq2.
- > -Los atributos de cada columna son: 
+ > Los atributos de cada columna son: 
 >   1) Identificadores de transcripción
 >   2) Valores medios base
 >   3) Log 2 (cambio de pliegue)
