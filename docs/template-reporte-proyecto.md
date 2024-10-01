@@ -66,7 +66,7 @@ Estas preguntas de investigación contribuirán a comprender las adaptaciones de
 Los datos de entrada fueron descargados desde NCBI y se encuentran en RUTA DE LA CARPETA.
 
 ```
-/home/ednakrz/BioPython/Proyecto_ExpresionMurina
+/home/ednakrz/BioPython/Proyecto_ExpresionMurina/Expresion_Genetica_RetinaMurina/data
 .
 ├── Datos_complementarios
 │   ├── archivo_prueba.txt
