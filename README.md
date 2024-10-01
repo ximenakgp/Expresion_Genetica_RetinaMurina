@@ -60,7 +60,7 @@ Los conjuntos de datos generados y analizados durante el estudio están disponib
 
 Los datos de entrada fueron descargados desde NCBI
 
-> Versión/Identificador del genoma:  NC_000913.3
+> Versión/Identificador Adhesión GEO: GSE131954
 
 > Fecha de descarga: 25/09/2024
 
