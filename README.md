@@ -58,6 +58,17 @@ Los conjuntos de datos generados y analizados durante el estudio están disponib
 
 ## Metadatos y documentación
 
+Los datos de entrada fueron descargados desde NCBI
+
+> Versión/Identificador del genoma:  NC_000913.3
+
+> Fecha de descarga: 25/09/2024
+
+| Archivo | Descripción  | Tipo |
+|:--      |:--           |:--  |
+| GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt  | Medidas de abundancia normalizada específicas para los genes diferencialmente expresados (DEGs) de los ratones espaciales | Formato tsv |
+
+Para mayor información de los datos, favor de consultar el **informe del proyecto** ubicado en este repositorio GitHub. 
 
 ## Código fuente
 
