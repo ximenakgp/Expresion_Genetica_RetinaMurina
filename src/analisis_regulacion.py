@@ -1,27 +1,50 @@
 '''
 NAME: 
+        ANÁLISIS DE EXPRESIÓN DIFERENCIAL DE GENES 
     
-VERSION:
+VERSION: 
+        1
     
 AUTHORS: 
+        Edna Karen Rivera Zagal 
+        Karla Ximena González Platas
 
 DESCRIPTION:
-            SCRIPT PARA IDENTIFICAR LOS GENES REGULADOS POSITIVAMENTE, GUARDARLOS Y 
-            LUEGO EXTRAER LOS 10 QUE MAS SE REGULAN Y HACER UNA GRAFICA DE ESTOS.
-            Posteriormente, podríamos complementar todo, utilizando biopython y entrez para hacer 
-            consultas a NCBI y sacar información 
-            sobre estos genes porque por ejemplo en esta parte del artículo se mencionan dos de ellos
-            Hacer el script para ambos, que se ocupe tanto para los positivos como parea los negativos y 
-            que sea funcional.
+            Script para filtrar los genes regulados según su cambio de expresión 
+            "log2foldchange", ya sea positiva o negativa, y guardarlos en un archivo de 
+            salida. El script permite especificar la columna de interés y el tipo de 
+            regulación ("positiva" o "negativa"). Los genes filtrados se guardan en 
+            un archivo de texto con el tipo de regulación incluido en el nombre del archivo.
     
 CATEGORY:
-        Biopython: 
+        Proyecto de Biopython: Expresion_Genetica_RetinaMurina
 
 USAGE:
-        % python
-    
-METHOD:
-un log2FoldChange positivo generalmente indica sobreexpresión de un gen bajo ciertas condiciones
+        % python analisis_regulacion.py -i <ruta al archivo> -o <ruta a donde se guardaran los resultados> 
+          -c <nombre de la columna> -r <tipo de regulación>
+
+        EXAMPLES:
+
+        % python analisis_regulacion.py -i ../data/GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt -o ../results/genes_regulacion.txt -c log2FoldChange  -r positiva
+
+        % python analisis_regulacion.py -i ../data/GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt -o ../results/genes_regulacion.txt -c log2FoldChange  -r negativa
+
+PARAMETERS:
+
+%  python analisis_regulacion.py --help
+
+Análisis de expresión diferencial de genes
+
+options:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+                        Ruta del archivo de entrada (TSV)
+  -o OUTPUT, --output OUTPUT
+                        Ruta del archivo de salida
+  -c COLUMN, --column COLUMN
+                        Columna para filtrar genes
+  -r {positiva,negativa}, --regulacion {positiva,negativa}
+                        Tipo de regulación a analizar ('positiva' o 'negativa')
     
 '''
 
@@ -37,17 +60,34 @@ import argparse
 # =                            Functions
 # ===========================================================================
 
+def obtener_argumentos():
+    """
+    Obtiene argumentos desde la línea de comandos
+    """
+    parser = argparse.ArgumentParser(description="Análisis de expresión diferencial de genes")
+    parser.add_argument("-i", "--input", required=True, help="Ruta del archivo de entrada")
+    parser.add_argument("-o", "--output", required=True, help="Ruta del archivo de salida")
+    parser.add_argument("-c", "--column", default="log2FoldChange", help="Columna para filtrar genes")
+    parser.add_argument("-r", "--regulacion", choices=["positiva", "negativa"], required=True,
+                        help="Tipo de regulación ('positiva' o 'negativa')")
+    return parser.parse_args()
+
 def leer_archivo(ruta, sep="\t"):
-    """Lee un archivo en formato TSV y retorna un DataFrame."""
+    """
+    Lee un archivo en formato tabular y retorna un DataFrame
+    """
     try:
+        # Leer el archivo en un DataFrame considerando que esta separado por tabulaciones
         df = pd.read_csv(ruta, sep=sep)
-        print("Archivo leído correctamente.")
+        print("Archivo leído correctamente")
         return df
+    
     except Exception as e:
         print(f"Error al leer el archivo: {e}")
         return None
 
 def filtrar_genes(df, columna="log2FoldChange", regulacion="positiva"):
+
     """
     Filtra genes regulados según el criterio especificado.
 
@@ -58,6 +98,7 @@ def filtrar_genes(df, columna="log2FoldChange", regulacion="positiva"):
 
     Returns:
         DataFrame: Genes filtrados según el criterio.
+
     """
     if columna not in df.columns:
         print(f"La columna '{columna}' no existe en el DataFrame.")
@@ -66,6 +107,7 @@ def filtrar_genes(df, columna="log2FoldChange", regulacion="positiva"):
     if regulacion == "positiva":
         genes_filtrados = df[df[columna] > 0]
         print(f"Se encontraron {len(genes_filtrados)} genes regulados positivamente.")
+    
     elif regulacion == "negativa":
         genes_filtrados = df[df[columna] < 0]
         print(f"Se encontraron {len(genes_filtrados)} genes regulados negativamente.")
@@ -76,59 +118,16 @@ def filtrar_genes(df, columna="log2FoldChange", regulacion="positiva"):
     return genes_filtrados
 
 def guardar_genes(df, output_file):
-    """Guarda los genes filtrados en un archivo TSV."""
+    """
+    Guarda los genes filtrados en un archivo
+    
+    """
     try:
         df.to_csv(output_file, sep="\t", index=False)
         print(f"Genes guardados en {output_file}")
     except Exception as e:
         print(f"Error al guardar los genes: {e}")
 
-def obtener_argumentos():
-    """Obtiene argumentos desde la línea de comandos."""
-    parser = argparse.ArgumentParser(description="Análisis de expresión diferencial de genes")
-    parser.add_argument("-i", "--input", required=True, help="Ruta del archivo de entrada (TSV)")
-    parser.add_argument("-o", "--output", required=True, help="Ruta del archivo de salida")
-    parser.add_argument("-c", "--column", default="log2FoldChange", help="Columna para filtrar genes")
-    parser.add_argument("-r", "--regulacion", choices=["positiva", "negativa"], required=True,
-                        help="Tipo de regulación a analizar ('positiva' o 'negativa')")
-    return parser.parse_args()
-
-
-# Ruta del archivo
-archivo = "../data/GSE131954_DESeq2_RR9_Ground_Ctrl_vs_Flight_DEGs.txt"
-
-# Leer el archivo en un DataFrame considerando que está separado por tabulaciones (\t)
-#df = pd.read_csv(archivo, sep="\t")
-# Mostrar las primeras filas del archivo para verificar su contenido
-#print("Contenido del archivo:")
-#print(df.head())
-
-# Ver las columnas del archivo
-#print("\nColumnas disponibles:")
-#print(df.columns)
-
-# Filtrar genes regulados positivamente si hay una columna como log2FoldChange
-#if "log2FoldChange" in df.columns:
-    # Filtra el DataFrame para obtener solo los genes regulados positivamente
-    # Esto se hace seleccionando las filas donde "log2FoldChange" sea mayor que 0
-    #genes_regulados_positivamente = df[df["log2FoldChange"] > 0]
-    #print("\nGenes regulados positivamente:")
-    #print(genes_regulados_positivamente)
-
-    # Contar cuántos genes están regulados positivamente 
-    #cantidad_genes_positivos = len(genes_regulados_positivamente) 
-    # len(genes_regulados_positivamente): Devuelve el numero de filas
-
-    # Mostrar los resultados al usuario 
-    #print(f"\nSe encontraron {cantidad_genes_positivos} genes regulados positivamente") 
-
-# Guardar los genes regulados positivamente en un archivo separado
-#output_file = "genes_regulados_positivamente.txt"
-#genes_regulados_positivamente.to_csv(output_file, sep="\t", index=False)
-# - `to_csv`: Método de pandas para exportar datos a un archivo
-# - `sep="\t"`: Especifica que el archivo estará separado por tabulaciones (formato TSV)
-# - `index=False`: Evita incluir la columna de índices del DataFrame en el archivo
-#print(f"\nGenes regulados positivamente guardados en {output_file}")
 
 #=======================================================================#
 #===                             Main                                ===#
