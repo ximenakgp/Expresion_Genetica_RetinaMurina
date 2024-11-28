@@ -1,7 +1,42 @@
+'''
+NAME: 
+        
+    
+VERSION: 
+        1
+    
+AUTHORS: 
+        Edna Karen Rivera Zagal 
+        Karla Ximena González Platas
+
+DESCRIPTION:
+            
+    
+CATEGORY:
+        Proyecto de Biopython: Expresion_Genetica_RetinaMurina
+
+USAGE:
+        % python analisis_regulacion.py -i <ruta al archivo> -o <ruta a donde se guardaran los resultados> 
+          -c <nombre de la columna> -r <tipo de regulación>
+
+        EXAMPLES:
+
+        
+
+PARAMETERS:
+
+    
+'''
+
+# ===========================================================================
+# =                            Imports
+# ===========================================================================
+
 import pandas as pd
 from gprofiler import GProfiler
+import argparse
 
-# 1. Cargar y extraer los nombres de los genes desde el archivo
+# Cargar y extraer los nombres de los genes desde el archivo
 def cargar_genes_desde_archivo(ruta_archivo):
     """
     Carga un archivo tabular con datos de genes regulados y extrae la columna 'Symbol'.
@@ -10,7 +45,7 @@ def cargar_genes_desde_archivo(ruta_archivo):
     genes_unicos = df_genes['RefSeq Symbol'].dropna().unique().tolist()
     return genes_unicos
 
-# 2. Realizar análisis GO con G:Profiler
+
 def realizar_analisis_go(genes, organismo='mmusculus'):
     """
     Realiza un análisis GO con G:Profiler para los genes proporcionados.
@@ -19,7 +54,7 @@ def realizar_analisis_go(genes, organismo='mmusculus'):
     resultados_go = gp.profile(
         organism=organismo,
         query=genes,
-        sources=['GO:BP', 'GO:MF', 'GO:CC'],  # Biological Process, Molecular Function, Cellular Component
+        sources=['GO:BP', 'GO:MF', 'GO:CC', 'KEGG', 'HP'],  # Biological Process, Molecular Function, Cellular Component
         significance_threshold_method='fdr'  # Control de tasa de descubrimiento falso
     )
     
@@ -35,27 +70,36 @@ def realizar_analisis_go(genes, organismo='mmusculus'):
     
     return resultados_significativos
 
-# 3. Guardar los resultados
 def guardar_resultados_en_archivo(resultados_go, archivo_salida):
     """
     Guarda los resultados del análisis GO en un archivo CSV.
     """
     resultados_go.to_csv(archivo_salida, index=False)
 
-# 4. Script principal
+def obtener_argumentos():
+    """Obtiene los argumentos desde la línea de comandos"""
+    parser = argparse.ArgumentParser(description="Análisis GO de genes regulados")
+    parser.add_argument("-i", "--input", required=True, help="Ruta del archivo de entrada con los genes regulados")
+    parser.add_argument("-o", "--output", required=True, help="Ruta del archivo de salida para los resultados GO")
+    parser.add_argument("-r", "--regulacion", choices=["positiva", "negativa"], required=True,
+                        help="Tipo de regulación de los genes ('positiva' o 'negativa')")
+    parser.add_argument("-g", "--organismo", default="mmusculus", help="Organismo para el análisis GO (default: mmusculus)")
+    return parser.parse_args()
+
 if __name__ == "__main__":
-    # Ruta al archivo con los datos de los genes regulados positivamente
-    ruta_archivo_genes = "genes_regulados_positivamente.txt"
+    # Obtener los argumentos desde la línea de comandos
+    args = obtener_argumentos()
     
-    # Cargar los genes desde el archivo tabular
-    genes_regulados_positivos = cargar_genes_desde_archivo(ruta_archivo_genes)
-    print(f"Genes regulados positivamente encontrados: {len(genes_regulados_positivos)}")
+    # Cargar los genes desde el archivo
+    genes_regulados = cargar_genes_desde_archivo(args.input)
+    print(f"Genes regulados {args.regulacion} encontrados: {len(genes_regulados)}")
     
     # Realizar análisis GO
-    resultados_analisis_go = realizar_analisis_go(genes_regulados_positivos, organismo='mmusculus')  
+    resultados_analisis_go = realizar_analisis_go(genes_regulados, organismo=args.organismo)  
     print(f"Resultados del análisis GO: {len(resultados_analisis_go)} categorías enriquecidas encontradas.")
     
     # Guardar resultados
-    archivo_resultados_salida = "resultados_go_genes_positivos.csv"
-    guardar_resultados_en_archivo(resultados_analisis_go, archivo_resultados_salida)
-    print(f"Resultados guardados en: {archivo_resultados_salida}")
+    guardar_resultados_en_archivo(resultados_analisis_go, args.output)
+    print(f"Resultados guardados en: {args.output}")
+
+
