@@ -19,13 +19,20 @@ USAGE:
         % python analisis_regulacion.py -i <ruta al archivo> -o <ruta a donde se guardaran los resultados> 
           -c <nombre de la columna> -r <tipo de regulación>
 
-        EXAMPLES:
-
-        
+        % gen_ontology_ora.py [-h] -i INPUT -o OUTPUT [-g ORGANISMO]
+        EXAMPLES:       
 
 PARAMETERS:
+            Análisis GO de genes regulados
 
-    
+            options:
+            -h, --help            show this help message and exit
+            -i INPUT, --input INPUT
+                                    Ruta del archivo de entrada con los genes regulados
+            -o OUTPUT, --output OUTPUT
+                                    Ruta del archivo de salida para los resultados GO
+            -g ORGANISMO, --organismo ORGANISMO
+                                    Organismo para el análisis GO (default: mmusculus)
 '''
 
 # =========================================================================== 
@@ -195,6 +202,6 @@ if __name__ == "__main__":
 
     # Guardar los resultados del análisis en el archivo de salida especificado
     guardar_resultados_en_archivo(resultados_analisis_go, args.output)
-    print(f"Resultados guardados en: {args.output}")
+    #print(f"Resultados guardados en: {args.output}")
 
 

@@ -1,5 +1,31 @@
+'''
+NAME: 
+        
+    
+VERSION: 
+        1
+    
+AUTHORS: 
+        Edna Karen Rivera Zagal 
+        Karla Ximena González Platas
+
+DESCRIPTION:
+            
+    
+CATEGORY:
+        Proyecto de Biopython: Expresion_Genetica_RetinaMurina
+
+'''
+
+# =========================================================================== 
+# =                            Imports 
+# =========================================================================== 
 import os
 import matplotlib.pyplot as plt
+
+# =========================================================================== 
+# =                              Functions
+# =========================================================================== 
 
 class GraficadorTopTerminos:
     """
@@ -21,7 +47,7 @@ class GraficadorTopTerminos:
         
         # Extraer solo el directorio de la ruta completa, sin el nombre de archivo
         output_dir_path = os.path.dirname(self.output_dir)
-        print(output_dir_path)
+        #print(output_dir_path)
         # Crear el directorio si no existe
         if not os.path.exists(output_dir_path):
             os.makedirs(output_dir_path)
@@ -32,6 +58,7 @@ class GraficadorTopTerminos:
         # Verificar si el directorio para los gráficos existe, si no, crearlo
         if not os.path.exists(self.output_graph_dir):
             os.makedirs(self.output_graph_dir)
+        #print(self.output_graph_dir)
         
     def graficar(self, top_terminos):
         """
@@ -50,25 +77,27 @@ class GraficadorTopTerminos:
 
             # Extraer nombres, p-values y tamaños de las consultas
             nombres = [termino['name'] for termino in terminos]
+            #print(nombres)
+
             p_values = [termino['p_value'] for termino in terminos]
             #query_sizes = [termino['query_size'] for termino in terminos]
-            
+            #print(p_values)
             # Crear la figura
-            plt.figure(figsize=(10, 6))
+            #plt.figure(figsize=(10, 6))
             
             # Crear un gráfico de barras horizontales con p-values
             plt.barh(nombres, p_values, color='skyblue')
-            
+
             # Agregar etiquetas y título
-            plt.xlabel('nombres')
-            plt.ylabel('p_values')
+            plt.xlabel('p_values')
+            plt.ylabel('Categorías sobrerrepresentadas')
             plt.title(f'Top {categoria} Términos más Representados')
             
             # Invertir el eje Y para que el término más significativo esté en la parte superior
             plt.gca().invert_yaxis()  
             
             # Aplicar escala logarítmica al eje Y si los p-values son pequeños
-            plt.yscale('log')  # Escala logarítmica en el eje Y
+            #plt.xscale('log')  # Escala logarítmica en el eje Y
             
             # Guardar la gráfica en un archivo PNG dentro del directorio de gráficos
             output_file = os.path.join(self.output_graph_dir, f"{categoria}_top_terms.png")
