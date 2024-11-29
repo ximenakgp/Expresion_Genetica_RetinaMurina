@@ -192,9 +192,7 @@ if __name__ == "__main__":
     graficador = GraficadorTopTerminos(output_dir=args.output)
     graficador.graficar(top_terminos) 
     
-    print(f"Gráficas generadas y guardadas en: {args.output}/graphs")
-    
-    
+
     # Guardar los resultados del análisis en el archivo de salida especificado
     guardar_resultados_en_archivo(resultados_analisis_go, args.output)
     print(f"Resultados guardados en: {args.output}")

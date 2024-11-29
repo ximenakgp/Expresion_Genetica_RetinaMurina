@@ -21,7 +21,7 @@ class GraficadorTopTerminos:
         
         # Extraer solo el directorio de la ruta completa, sin el nombre de archivo
         output_dir_path = os.path.dirname(self.output_dir)
-        
+        print(output_dir_path)
         # Crear el directorio si no existe
         if not os.path.exists(output_dir_path):
             os.makedirs(output_dir_path)
@@ -60,7 +60,8 @@ class GraficadorTopTerminos:
             plt.barh(nombres, p_values, color='skyblue')
             
             # Agregar etiquetas y título
-            plt.xlabel('p-value')
+            plt.xlabel('nombres')
+            plt.ylabel('p_values')
             plt.title(f'Top {categoria} Términos más Representados')
             
             # Invertir el eje Y para que el término más significativo esté en la parte superior
@@ -72,6 +73,7 @@ class GraficadorTopTerminos:
             # Guardar la gráfica en un archivo PNG dentro del directorio de gráficos
             output_file = os.path.join(self.output_graph_dir, f"{categoria}_top_terms.png")
             plt.savefig(output_file)
+            plt.show()
             plt.close()
 
 
