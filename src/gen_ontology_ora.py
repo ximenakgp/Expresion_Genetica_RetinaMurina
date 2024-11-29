@@ -42,8 +42,8 @@ def cargar_genes_desde_archivo(ruta_archivo):
     Carga un archivo tabular con datos de genes regulados y extrae la columna 'Symbol'.
     """
     df_genes = pd.read_csv(ruta_archivo, sep="\t")
-    genes_unicos = df_genes['RefSeq Symbol'].dropna().unique().tolist()
-    return genes_unicos
+    genes = df_genes['RefSeq Symbol'].dropna().unique().tolist()
+    return genes
 
 
 def realizar_analisis_go(genes, organismo='mmusculus'):
@@ -81,8 +81,6 @@ def obtener_argumentos():
     parser = argparse.ArgumentParser(description="Análisis GO de genes regulados")
     parser.add_argument("-i", "--input", required=True, help="Ruta del archivo de entrada con los genes regulados")
     parser.add_argument("-o", "--output", required=True, help="Ruta del archivo de salida para los resultados GO")
-    parser.add_argument("-r", "--regulacion", choices=["positiva", "negativa"], required=True,
-                        help="Tipo de regulación de los genes ('positiva' o 'negativa')")
     parser.add_argument("-g", "--organismo", default="mmusculus", help="Organismo para el análisis GO (default: mmusculus)")
     return parser.parse_args()
 
@@ -92,7 +90,7 @@ if __name__ == "__main__":
     
     # Cargar los genes desde el archivo
     genes_regulados = cargar_genes_desde_archivo(args.input)
-    print(f"Genes regulados {args.regulacion} encontrados: {len(genes_regulados)}")
+    print(f"Genes regulados encontrados: {len(genes_regulados)}")
     
     # Realizar análisis GO
     resultados_analisis_go = realizar_analisis_go(genes_regulados, organismo=args.organismo)  
