@@ -51,7 +51,7 @@ class GraficadorTopTerminos:
             # Extraer nombres, p-values y tamaños de las consultas
             nombres = [termino['name'] for termino in terminos]
             p_values = [termino['p_value'] for termino in terminos]
-            query_sizes = [termino['query_size'] for termino in terminos]
+            #query_sizes = [termino['query_size'] for termino in terminos]
             
             # Crear la figura
             plt.figure(figsize=(10, 6))

@@ -187,7 +187,7 @@ if __name__ == "__main__":
         for termino in terminos:
             print(f"  {termino['name']} (p-value: {termino['p_value']}, genes: {termino['query_size']})")
             # QUITAR P_VALUE Y QUERY
-
+    #print(top_terminos)
     # Crear el objeto graficador y graficar los términos
     graficador = GraficadorTopTerminos(output_dir=args.output)
     graficador.graficar(top_terminos) 
