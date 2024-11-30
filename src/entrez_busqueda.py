@@ -137,7 +137,7 @@ def guardar_genes(lista_busqueda, output_file):
         with open(output_file, "w") as archivo:
                 for resultado in lista_busqueda:
                         archivo.write(resultado)
-        print("Resultados de la busqueda guardados en {output_file}")
+        print(f"Resultados de la busqueda guardados en {output_file}")
     except Exception as e:
         print(f"Error al guardar los genes buscados: {e}")
 
