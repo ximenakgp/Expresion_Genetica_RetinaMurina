@@ -170,9 +170,9 @@ def guardar_resultados_en_archivo(resultados_go, archivo_salida):
     # Guardar el DataFrame como un archivo CSV
     resultados_go.to_csv(archivo_salida, index=False)
 
-# =========================================================================== 
-# =                                  Main
-# =========================================================================== 
+# =================================================================== 
+# =                              Main
+# =================================================================== 
 
 if __name__ == "__main__":
     # Obtener los argumentos desde la línea de comandos

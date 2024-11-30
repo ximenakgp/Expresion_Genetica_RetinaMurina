@@ -1,0 +1,122 @@
+Datos para Drd4:
+
+1. A12M1
+adenovirus-12 chromosome modification site 1C [Homo sapiens (human)]
+Other Designations: Adenovirus-12 chromosome modification site-1q1
+Chromosome: 1; Location: 1q42-q43
+This record was discontinued.
+ID: 4
+
+
+Datos para Irf7:
+
+1. A12M4
+adenovirus-12 chromosome modification site 17 [Homo sapiens (human)]
+Chromosome: 17; Location: 17q21-q22
+This record was discontinued.
+ID: 7
+
+
+Datos para Hsp90aa1:
+
+1. ACVR1
+Official Symbol: ACVR1 and Name: activin A receptor type 1 [Homo sapiens (human)]
+Other Aliases: ACTRIA, ACVRLK2, ALK2, FOP, SKR1, TSRI, ACVR1
+Other Designations: activin receptor type-1; TGF-B superfamily receptor type I; activin A receptor, type I; activin A receptor, type II-like kinase 2; activin receptor type I; activin receptor-like kinase 2; hydroxyalkyl-protein kinase; serine/threonine-protein kinase receptor R1
+Chromosome: 2; Location: 2q24.1
+Annotation: Chromosome 2 NC_000002.12 (157736446..157876330, complement)
+MIM: 102576
+ID: 90
+
+2. A1BG
+Official Symbol: A1BG and Name: alpha-1-B glycoprotein [Homo sapiens (human)]
+Other Aliases: A1B, ABG, GAB, HYST2477
+Other Designations: alpha-1B-glycoprotein; HEL-S-163pA; epididymis secretory sperm binding protein Li 163pA
+Chromosome: 19; Location: 19q13.43
+Annotation: Chromosome 19 NC_000019.10 (58345183..58353492, complement)
+MIM: 138670
+ID: 1
+
+
+Datos para Sik2:
+
+1. A2M
+Official Symbol: A2M and Name: alpha-2-macroglobulin [Homo sapiens (human)]
+Other Aliases: A2MD, CPAMD5, FWP007, S863-7
+Other Designations: alpha-2-macroglobulin; C3 and PZP-like alpha-2-macroglobulin domain-containing protein 5; alpha-2-M
+Chromosome: 12; Location: 12p13.31
+Annotation: Chromosome 12 NC_000012.12 (9067708..9116229, complement)
+MIM: 103950
+ID: 2
+
+
+Datos para LOC100502914:
+
+1. Gm19451
+Official Symbol: Gm19451 and Name: predicted gene, 19451 [Mus musculus (house mouse)]
+Chromosome: 3; Location: 3 38.78 cM
+ID: 100502914
+
+
+Datos para Btaf1:
+
+1. A1BG
+Official Symbol: A1BG and Name: alpha-1-B glycoprotein [Homo sapiens (human)]
+Other Aliases: A1B, ABG, GAB, HYST2477
+Other Designations: alpha-1B-glycoprotein; HEL-S-163pA; epididymis secretory sperm binding protein Li 163pA
+Chromosome: 19; Location: 19q13.43
+Annotation: Chromosome 19 NC_000019.10 (58345183..58353492, complement)
+MIM: 138670
+ID: 1
+
+
+Datos para Aqp1:
+
+1. A1BG
+Official Symbol: A1BG and Name: alpha-1-B glycoprotein [Homo sapiens (human)]
+Other Aliases: A1B, ABG, GAB, HYST2477
+Other Designations: alpha-1B-glycoprotein; HEL-S-163pA; epididymis secretory sperm binding protein Li 163pA
+Chromosome: 19; Location: 19q13.43
+Annotation: Chromosome 19 NC_000019.10 (58345183..58353492, complement)
+MIM: 138670
+ID: 1
+
+
+Datos para Hist1h2bc:
+
+1. A1BG
+Official Symbol: A1BG and Name: alpha-1-B glycoprotein [Homo sapiens (human)]
+Other Aliases: A1B, ABG, GAB, HYST2477
+Other Designations: alpha-1B-glycoprotein; HEL-S-163pA; epididymis secretory sperm binding protein Li 163pA
+Chromosome: 19; Location: 19q13.43
+Annotation: Chromosome 19 NC_000019.10 (58345183..58353492, complement)
+MIM: 138670
+ID: 1
+
+2. A2M
+Official Symbol: A2M and Name: alpha-2-macroglobulin [Homo sapiens (human)]
+Other Aliases: A2MD, CPAMD5, FWP007, S863-7
+Other Designations: alpha-2-macroglobulin; C3 and PZP-like alpha-2-macroglobulin domain-containing protein 5; alpha-2-M
+Chromosome: 12; Location: 12p13.31
+Annotation: Chromosome 12 NC_000012.12 (9067708..9116229, complement)
+MIM: 103950
+ID: 2
+
+
+Datos para A430035B10Rik:
+
+1. LOC430035
+similar to olfactory receptor 127 [Gallus gallus (chicken)]
+This record was discontinued.
+ID: 430035
+
+2. NAT2
+Official Symbol: NAT2 and Name: N-acetyltransferase 2 [Homo sapiens (human)]
+Other Aliases: AAC2, NAT-2, PNAT
+Other Designations: arylamine N-acetyltransferase 2; N-acetyltransferase 2 (arylamine N-acetyltransferase); N-acetyltransferase type 2; N-hydroxyarylamine O-acetyltransferase; arylamide acetylase 2
+Chromosome: 8; Location: 8p22
+Annotation: Chromosome 8 NC_000008.11 (18386301..18401218)
+MIM: 612182
+ID: 10
+
+

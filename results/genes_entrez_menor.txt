@@ -1,0 +1,140 @@
+Datos para D030056L22Rik:
+
+1. Timm9
+Official Symbol: Timm9 and Name: translocase of inner mitochondrial membrane 9 [Mus musculus (house mouse)]
+Other Aliases: 2810011L15Rik, Tim10a, Timm10
+Other Designations: mitochondrial import inner membrane translocase subunit Tim9; translocase of inner mitochondrial membrane 10 homolog; translocase of inner mitochondrial membrane 9 homolog
+Chromosome: 12; Location: 12 29.39 cM
+Annotation: Chromosome 12 NC_000078.7 (71169946..71183476, complement)
+ID: 30056
+
+2. ABCB7
+Official Symbol: ABCB7 and Name: ATP binding cassette subfamily B member 7 [Homo sapiens (human)]
+Other Aliases: ABC7, ASAT, Atm1p, EST140535
+Other Designations: iron-sulfur clusters transporter ABCB7, mitochondrial; ABC transporter 7 protein; ATP-binding cassette sub-family B member 7, mitochondrial; ATP-binding cassette transporter 7; ATP-binding cassette, sub-family B (MDR/TAP), member 7
+Chromosome: X; Location: Xq13.3
+Annotation: Chromosome X NC_000023.11 (75051048..75156283, complement)
+MIM: 300135
+ID: 22
+
+
+Datos para Rbm5:
+
+1. A12M2
+adenovirus-12 chromosome modification site 1A [Homo sapiens (human)]
+Other Designations: Adenovirus-12 chromosome modification site-1p
+Chromosome: 1; Location: 1p36
+This record was discontinued.
+ID: 5
+
+
+Datos para Phyhd1:
+
+1. A1BG
+Official Symbol: A1BG and Name: alpha-1-B glycoprotein [Homo sapiens (human)]
+Other Aliases: A1B, ABG, GAB, HYST2477
+Other Designations: alpha-1B-glycoprotein; HEL-S-163pA; epididymis secretory sperm binding protein Li 163pA
+Chromosome: 19; Location: 19q13.43
+Annotation: Chromosome 19 NC_000019.10 (58345183..58353492, complement)
+MIM: 138670
+ID: 1
+
+
+Datos para Cd47:
+
+1. ACLY
+Official Symbol: ACLY and Name: ATP citrate lyase [Homo sapiens (human)]
+Other Aliases: ACL, ATPCL, CLATP
+Other Designations: ATP-citrate synthase; ATP-citrate (pro-S-)-lyase; citrate cleavage enzyme
+Chromosome: 17; Location: 17q21.2
+Annotation: Chromosome 17 NC_000017.11 (41866917..41930545, complement)
+MIM: 108728
+ID: 47
+
+
+Datos para 4831440E17Rik:
+
+1.  Error occurred: cannot get document summary
+ID: 4831440
+
+2. AAVS1
+Official Symbol: AAVS1 and Name: adeno-associated virus integration site 1 [Homo sapiens (human)]
+Other Aliases: AAV
+Chromosome: 19; Location: 19q13-qter
+MIM: 102699
+ID: 17
+
+
+Datos para Slc25a33:
+
+1. ABL1
+Official Symbol: ABL1 and Name: ABL proto-oncogene 1, non-receptor tyrosine kinase [Homo sapiens (human)]
+Other Aliases: ABL, BCR-ABL, CHDSKM, JTK7, bcr/abl, c-ABL, c-ABL1, p150, v-abl
+Other Designations: tyrosine-protein kinase ABL1; ABL protooncogene 1 nonreceptor tyrosine kinase; Abelson tyrosine-protein kinase 1; BCR-ABL1 p190; BCR/ABL e8a2 fusion; BCR/ABL1 e1a2 fusion protein; BCR/ABL1 fusion; bcr/c-abl oncogene protein; c-abl oncogene 1, receptor tyrosine kinase; chimeric BCR::ABL1 protein; proto-oncogene c-Abl; proto-oncogene tyrosine-protein kinase ABL1; v-abl Abelson murine leukemia viral oncogene homolog 1
+Chromosome: 9; Location: 9q34.12
+Annotation: Chromosome 9 NC_000009.12 (130713043..130887675)
+MIM: 189980
+ID: 25
+
+2. ACADL
+Official Symbol: ACADL and Name: acyl-CoA dehydrogenase long chain [Homo sapiens (human)]
+Other Aliases: ACAD4, LCAD
+Other Designations: long-chain specific acyl-CoA dehydrogenase, mitochondrial; acyl-Coenzyme A dehydrogenase, long chain; long-chain acyl-CoA dehydrogenase
+Chromosome: 2; Location: 2q34
+Annotation: Chromosome 2 NC_000002.12 (210187923..210225447, complement)
+MIM: 609576
+ID: 33
+
+
+Datos para A930003O13Rik:
+
+1. SP_0206
+hypothetical protein [Streptococcus pneumoniae TIGR4]
+Other Aliases: SP_0206
+Annotation:  NC_003028.3 (192159..192461)
+This record was discontinued.
+ID: 930003
+
+2. AADAC
+Official Symbol: AADAC and Name: arylacetamide deacetylase [Homo sapiens (human)]
+Other Aliases: CES5A1, DAC
+Other Designations: arylacetamide deacetylase; arylacetamide deacetylase (esterase)
+Chromosome: 3; Location: 3q25.1
+Annotation: Chromosome 3 NC_000003.12 (151814116..151828488)
+MIM: 600338
+ID: 13
+
+
+Datos para Eef1a1:
+
+1. A1BG
+Official Symbol: A1BG and Name: alpha-1-B glycoprotein [Homo sapiens (human)]
+Other Aliases: A1B, ABG, GAB, HYST2477
+Other Designations: alpha-1B-glycoprotein; HEL-S-163pA; epididymis secretory sperm binding protein Li 163pA
+Chromosome: 19; Location: 19q13.43
+Annotation: Chromosome 19 NC_000019.10 (58345183..58353492, complement)
+MIM: 138670
+ID: 1
+
+2. A1BG
+Official Symbol: A1BG and Name: alpha-1-B glycoprotein [Homo sapiens (human)]
+Other Aliases: A1B, ABG, GAB, HYST2477
+Other Designations: alpha-1B-glycoprotein; HEL-S-163pA; epididymis secretory sperm binding protein Li 163pA
+Chromosome: 19; Location: 19q13.43
+Annotation: Chromosome 19 NC_000019.10 (58345183..58353492, complement)
+MIM: 138670
+ID: 1
+
+
+Datos para Snhg12:
+
+1. SERPINA3
+Official Symbol: SERPINA3 and Name: serpin family A member 3 [Homo sapiens (human)]
+Other Aliases: AACT, ACT, GIG24, GIG25
+Other Designations: alpha-1-antichymotrypsin; cell growth-inhibiting gene 24/25 protein; growth-inhibiting protein 24; growth-inhibiting protein 25; serine (or cysteine) proteinase inhibitor, clade A, member 3; serpin A3; serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 3
+Chromosome: 14; Location: 14q32.13
+Annotation: Chromosome 14 NC_000014.9 (94612391..94624053)
+MIM: 107280
+ID: 12
+
+
