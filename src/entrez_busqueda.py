@@ -41,6 +41,20 @@ import pandas as pd
 # =                            Functions
 # ===========================================================================
 
+
+def main():
+    args = obtener_argumentos()
+    df = leer_archivo(args.input)
+    if df is not None:
+        genes_filtrados = filtrar_genes(df,args.cantidad, args.significancia)
+        if genes_filtrados is not None:
+            busqueda = busqueda_entrez(args.email, genes_filtrados, args.basedatos)
+        
+            # Generar el nombre del archivo de salida dinámicamente
+            regulacion = args.significancia
+            output_file = args.output.replace(".txt", f"_{regulacion}.txt")
+            guardar_genes(busqueda, output_file)
+            
 def obtener_argumentos():
     """
     Obtiene argumentos desde la línea de comandos
@@ -146,18 +160,6 @@ def guardar_genes(lista_busqueda, output_file):
 #=======================================================================#
 
 
-def main():
-    args = obtener_argumentos()
-    df = leer_archivo(args.input)
-    if df is not None:
-        genes_filtrados = filtrar_genes(df,args.cantidad, args.significancia)
-        if genes_filtrados is not None:
-            busqueda = busqueda_entrez(args.email, genes_filtrados, args.basedatos)
-        
-            # Generar el nombre del archivo de salida dinámicamente
-            regulacion = args.significancia
-            output_file = args.output.replace(".txt", f"_{regulacion}.txt")
-            guardar_genes(busqueda, output_file)
 
 if __name__ == "__main__":
     main()
