@@ -92,16 +92,14 @@ def filtrar_genes(df,cantidad, regulacion="mayor"):
         
         # Obtener los valores más pequeños de la columna 'pvalue'
         valores_mas_pequenos = df.nsmallest(cantidad, columna)
-        print(valores_mas_pequenos)
         genes_filtrados = valores_mas_pequenos["RefSeq Symbol"]
-        print(genes_filtrados)
+
     
     elif regulacion == "menor":
        # Obtener los valores más altos de la columna 'pvalue'
         valores_mas_altos = df.nlargest(cantidad, columna)
-        print(valores_mas_altos)
         genes_filtrados = valores_mas_altos["RefSeq Symbol"]
-        print(genes_filtrados)
+
     else:
         print(f"Regulación desconocida: {regulacion}. Use 'positiva' o 'negativa'.")
         return None
@@ -109,14 +107,12 @@ def filtrar_genes(df,cantidad, regulacion="mayor"):
     return genes_filtrados
 
 def busqueda_entrez (email, genes_filtrados, database): 
-    print("je" )
+   
     # Correo
     Entrez.email = email
     # Lista para almacenar los resultados
     resultados = [] 
-    print(genes_filtrados)
     for gene_filtrado in genes_filtrados:
-         print(gene_filtrado)
          try: 
                  # Realiza la búsqueda en la base de datos Nucleotide
                  handle = Entrez.efetch(db=database, id=gene_filtrado, rettype="gb", retmode="text")
@@ -125,15 +121,9 @@ def busqueda_entrez (email, genes_filtrados, database):
                  
                  # Agregar los datos obtenidos para cada ID a la lista de resultados
                  resultados.append(f"Datos para {gene_filtrado}:\n{data}\n")
-                 # Imprime los datos obtenidos para cada ID
-                 print(f"Datos para {gene_filtrado}:\n{data}\n")
                         
          except Exception as e:
                  print(f"Error al buscar {gene_filtrado}: {e}")
-
-    print("Resultados recopilados:")
-    for resultado in resultados:
-        print(resultado)
     return resultados 
 
 
@@ -163,8 +153,7 @@ def main():
         genes_filtrados = filtrar_genes(df,args.cantidad, args.significancia)
         if genes_filtrados is not None:
             busqueda = busqueda_entrez(args.email, genes_filtrados, args.basedatos)
-            print(busqueda)    
-            
+        
             # Generar el nombre del archivo de salida dinámicamente
             regulacion = args.significancia
             output_file = args.output.replace(".txt", f"_{regulacion}.txt")
