@@ -36,29 +36,22 @@ class GraficadorTopTerminos:
         output_dir (str): Directorio donde se guardarán las gráficas.
     """
 
-    def __init__(self, output_dir):
+    def __init__(self):
         """
-        Inicializa el objeto GraficadorTopTerminos.
-        
-        Parámetros:
-            output_dir (str): Directorio donde se guardarán las gráficas.
+        Inicializa el objeto GraficadorTopTerminos
+        Las gráficas se guardarán en una carpeta 'graphs' en el directorio de ejecución actual.
         """
-        self.output_dir = output_dir
-        
-        # Extraer solo el directorio de la ruta completa, sin el nombre de archivo
-        output_dir_path = os.path.dirname(self.output_dir)
-        #print(output_dir_path)
-        # Crear el directorio si no existe
-        if not os.path.exists(output_dir_path):
-            os.makedirs(output_dir_path)
-        
-        # Ahora crear la carpeta 'graphs' dentro del directorio de salida
-        self.output_graph_dir = os.path.join(output_dir_path, 'graphs')
-        
-        # Verificar si el directorio para los gráficos existe, si no, crearlo
+        # Obtener el directorio de ejecución actual
+        base_dir = os.getcwd()
+        print(f"Directorio de ejecución actual: {base_dir}")
+
+        # Crear la carpeta 'graphs' dentro del directorio actual
+        self.output_graph_dir = os.path.join(base_dir, 'graphs')
+        print(f"Directorio para gráficos: {self.output_graph_dir}")
+
+        # Crear el directorio para gráficos si no existe
         if not os.path.exists(self.output_graph_dir):
             os.makedirs(self.output_graph_dir)
-        #print(self.output_graph_dir)
         
     def graficar(self, top_terminos):
         """
@@ -77,13 +70,10 @@ class GraficadorTopTerminos:
 
             # Extraer nombres, p-values y tamaños de las consultas
             nombres = [termino['name'] for termino in terminos]
-            #print(nombres)
-
             p_values = [termino['p_value'] for termino in terminos]
-            #query_sizes = [termino['query_size'] for termino in terminos]
-            #print(p_values)
+
             # Crear la figura
-            #plt.figure(figsize=(10, 6))
+            plt.figure(figsize=(10, 6))
             
             # Crear un gráfico de barras horizontales con p-values
             plt.barh(nombres, p_values, color='skyblue')
@@ -94,17 +84,31 @@ class GraficadorTopTerminos:
             plt.title(f'Top {categoria} Términos más Representados')
             
             # Invertir el eje Y para que el término más significativo esté en la parte superior
-            plt.gca().invert_yaxis()  
-            
-            # Aplicar escala logarítmica al eje Y si los p-values son pequeños
-            #plt.xscale('log')  # Escala logarítmica en el eje Y
+            plt.gca().invert_yaxis()  Y
             
             # Guardar la gráfica en un archivo PNG dentro del directorio de gráficos
-            output_file = os.path.join(self.output_graph_dir, f"{categoria}_top_terms.png")
+            output_file = os.path.join(self.output_graph_dir, f"{categoria.replace(':', '_')}_top_terms.png")
+            print(f"Guardando gráfica en: {output_file}")
             plt.savefig(output_file)
             plt.show()
             plt.close()
 
 
+# Bloque principal para pruebas
+if __name__ == "__main__":
+    graficador = GraficadorTopTerminos()
 
+    # Datos de prueba
+    top_terminos = {
+        'GO:BP': [
+            {'name': 'Proceso 1', 'p_value': 0.001},
+            {'name': 'Proceso 2', 'p_value': 0.005},
+        ],
+        'GO:MF': [
+            {'name': 'Función 1', 'p_value': 0.01},
+            {'name': 'Función 2', 'p_value': 0.02},
+        ],
+    }
+
+    graficador.graficar(top_terminos)
 

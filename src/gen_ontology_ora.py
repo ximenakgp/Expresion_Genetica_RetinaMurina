@@ -192,16 +192,15 @@ if __name__ == "__main__":
     for fuente, terminos in top_terminos.items():
         print(f"\n{fuente}:")
         for termino in terminos:
-            print(f"  {termino['name']} (p-value: {termino['p_value']}, genes: {termino['query_size']})")
-            # QUITAR P_VALUE Y QUERY
-    #print(top_terminos)
+            print(f"  {termino['name']}")
+
     # Crear el objeto graficador y graficar los términos
-    graficador = GraficadorTopTerminos(output_dir=args.output)
+    graficador = GraficadorTopTerminos()
     graficador.graficar(top_terminos) 
     
 
     # Guardar los resultados del análisis en el archivo de salida especificado
     guardar_resultados_en_archivo(resultados_analisis_go, args.output)
-    #print(f"Resultados guardados en: {args.output}")
+
 
 
