@@ -24,7 +24,7 @@ Esperado:
 - Buscará los 10 genes con menor pvalue en la base de datos gene.
 - Guardará los resultados en salida_entrez_mayor.txt.
 
-# 2. Archivo sin columna pvalue
+## 2. Archivo sin columna pvalue
 Objetivo: Verificar si el script detecta la ausencia de la columna necesaria para filtrar.
 Entrada:
 
