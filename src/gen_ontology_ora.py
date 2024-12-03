@@ -19,11 +19,11 @@ CATEGORY:
         Proyecto de Biopython: Expresion_Genetica_RetinaMurina
 
 USAGE:
+        % gen_ontology_ora.py [-h] -i INPUT -o OUTPUT [-g ORGANISMO]
+       
+        EXAMPLES:  
         % python gen_ontology_ora.py -i ..\results\genes_regulacion_positiva.txt -o ../results/ora_genes_positiva.txt
         % python gen_ontology_ora.py -i ..\results\genes_regulacion_negativa.txt -o ../results/ora_genes_negativa.txt
-
-        % gen_ontology_ora.py [-h] -i INPUT -o OUTPUT [-g ORGANISMO]
-        EXAMPLES:       
 
 PARAMETERS:
             Análisis GO de genes regulados
@@ -45,7 +45,7 @@ PARAMETERS:
 import pandas as pd  
 from gprofiler import GProfiler  # Para realizar análisis GO
 import argparse  
-from graficas_GO import GraficadorTopTerminos  # Importar la función del primer script
+from graficas_GO import GraficadorTopTerminos  # Importar la función del script graficas_GO
 
 # =========================================================================== 
 # =                              Functions
@@ -55,8 +55,8 @@ def obtener_argumentos():
     """
     Maneja los argumentos de la línea de comandos para especificar los parámetros del programa.
     
-    Retorna:
-        argparse.Namespace: Objeto con los argumentos proporcionados.
+    Return:
+        Objeto con los argumentos proporcionados.
     """
     # Crear el parser para los argumentos
     parser = argparse.ArgumentParser(description="Análisis GO de genes regulados")
@@ -77,7 +77,7 @@ def cargar_genes_desde_archivo(ruta_archivo):
     Parámetros:
         ruta_archivo (str): Ruta al archivo de entrada con datos de genes.
     
-    Retorna:
+    Return:
         list: Lista de nombres únicos de genes (sin valores nulos).
     """
     # Leer el archivo de entrada usando pandas
@@ -146,7 +146,7 @@ def obtener_top_terminos_por_fuente(resultados_go, n_top=10):
         resultados_go (pd.DataFrame): DataFrame con los resultados del análisis GO.
         n_top (int): Número de términos a extraer por fuente.
     
-    Retorna:
+    Return:
         dict: Diccionario con listas de términos más significativos por fuente.
     """
     categorias = ['GO:BP', 'GO:MF', 'GO:CC', 'KEGG', 'HP']
