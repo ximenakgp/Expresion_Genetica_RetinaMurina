@@ -1,4 +1,4 @@
-# Casos de prueba o escenarios
+# Casos de prueba o escenarios *gen_ontology_ora.py*
 Este documento describe los casos de prueba para el script de Python *gen_ontology_ora.py* desarrollado para el análisis de sobrerrepresentación (Over-Representation Analysis, ORA) utilizando datos de expresión génica. Este tipo de análisis se enfoca en determinar si ciertos términos biológicos, como procesos de ontología génica (GO), rutas metabólicas (KEGG) o categorías fenotípicas (HP), están representados significativamente en un conjunto de genes regulados.
 
 Los casos de prueba se han diseñado teniendo en cuenta las diferentes funcionalidades del script así como los posibles errores que puedan surgir.
