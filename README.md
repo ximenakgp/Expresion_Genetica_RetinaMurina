@@ -12,13 +12,13 @@ OBJETIVO: Realizar un script que permita clasificar los genes de acuerdo a su re
  
 2. ¿Qué vías biológicas y categorías funcionales se encuentran sobrerrepresentadas entre los genes regulados positivamente y negativamente en la retina murina en respuesta a la exposición al vuelo espacial?  
 
-OBJETIVO: Realizar un análisis de sobrerrepresentación (ORA) para los genes regulados positivamente, lo cual permitirá identificar las vías y respuestas biológicas favorecidas como consecuencia de la exposición a las condiciones espaciales.
+OBJETIVO: Realizar un análisis de sobrerrepresentación (ORA) para los genes regulados positivamente y negativamente, lo cual permitirá identificar las vías y respuestas biológicas favorecidas como consecuencia de la exposición a las condiciones espaciales.
     
-3. ¿De qué manera obtenemos información sobre los genes que nos interesa?
+3. ¿Cómo obtener información adicional sobre genes de interés?
 
 OBJETIVO: Hacer uso de herramientas como Entrez para obterner información de los genes más importantes.
 
-Además, se explorará 1 pregunta adicional que complementan y enriquecen el enfoque del proyecto:
+Además, se explorará 1 pregunta adicional que complementa y enriquece el enfoque del proyecto:
 
 4. ¿Cuáles son los factores de transcripción expresados diferencialmente (DETF) que están regulados positivamente y qué implicaciones tienen en la expresión genética de la retina murina?  
 Dado que de los 600 genes expresados diferencialmente (DEG), 29 son factores de transcripción, esta pregunta busca identificar cuáles de estos DETF están regulados positivamente y cómo podrían influir en la regulación general de la expresión genética en la retina bajo condiciones espaciales.
