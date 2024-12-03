@@ -19,8 +19,8 @@ CATEGORY:
         Proyecto de Biopython: Expresion_Genetica_RetinaMurina
 
 USAGE:
-        % python analisis_regulacion.py -i <ruta al archivo> -o <ruta a donde se guardaran los resultados> 
-          -c <nombre de la columna> -r <tipo de regulación>
+        % python gen_ontology_ora.py -i ..\results\genes_regulacion_positiva.txt -o ../results/ora_genes_positiva.txt
+        % python gen_ontology_ora.py -i ..\results\genes_regulacion_negativa.txt -o ../results/ora_genes_negativa.txt
 
         % gen_ontology_ora.py [-h] -i INPUT -o OUTPUT [-g ORGANISMO]
         EXAMPLES:       
