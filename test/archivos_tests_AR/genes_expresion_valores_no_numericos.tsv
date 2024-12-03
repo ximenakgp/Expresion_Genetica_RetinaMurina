@@ -1,0 +1,11 @@
+GeneID	log2FoldChange	pValue
+GeneA	A	0.001
+GeneB	A	0.045
+GeneC	A	0.01
+GeneD	B	0.02
+GeneE	B	0.005
+GeneF	B	0.03
+GeneG	B	0.025
+GeneH	C	0.15
+GeneI	C	0.001
+GeneJ	C	0.007
