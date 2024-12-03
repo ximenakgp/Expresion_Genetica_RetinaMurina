@@ -1,21 +1,4 @@
-'''
-NAME: 
-        
-    
-VERSION: 
-        1
-    
-AUTHORS: 
-        Edna Karen Rivera Zagal 
-        Karla Ximena González Platas
 
-DESCRIPTION:
-            
-    
-CATEGORY:
-        Proyecto de Biopython: Expresion_Genetica_RetinaMurina
-
-'''
 
 # =========================================================================== 
 # =                            Imports 
@@ -84,7 +67,7 @@ class GraficadorTopTerminos:
             plt.title(f'Top {categoria} Términos más Representados')
             
             # Invertir el eje Y para que el término más significativo esté en la parte superior
-            plt.gca().invert_yaxis()  Y
+            plt.gca().invert_yaxis()
             
             # Guardar la gráfica en un archivo PNG dentro del directorio de gráficos
             output_file = os.path.join(self.output_graph_dir, f"{categoria.replace(':', '_')}_top_terms.png")
