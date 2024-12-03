@@ -45,7 +45,7 @@ PARAMETERS:
 import pandas as pd  
 from gprofiler import GProfiler  # Para realizar análisis GO
 import argparse  
-#from graficas_GO import GraficadorTopTerminos  # Importar la función del primer script
+from graficas_GO import GraficadorTopTerminos  # Importar la función del primer script
 
 # =========================================================================== 
 # =                              Functions
@@ -198,8 +198,8 @@ if __name__ == "__main__":
             print(f"  {termino['name']}")
 
     # Crear el objeto graficador y graficar los términos
-    #graficador = GraficadorTopTerminos()
-    #graficador.graficar(top_terminos) 
+    graficador = GraficadorTopTerminos()
+    graficador.graficar(top_terminos) 
     
 
     # Guardar los resultados del análisis en el archivo de salida especificado
