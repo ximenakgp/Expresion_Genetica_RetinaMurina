@@ -1,6 +1,6 @@
 '''
-NAME: Busqueda en Entrez de los genes significativos 
-        
+NAME: 
+        BÚSQUEDA EN ENTREZ DE LOS GENES SIGNIFICATIVOS     
     
 VERSION: 
         1
@@ -10,9 +10,7 @@ AUTHORS:
         Karla Ximena González Platas
 
 DESCRIPTION:
-        Script para buscar en la base de datos NCBI los valores de so
-        breexpresión de los genes regulados ya sea negativa o positiv
-        a mente, 
+        Script para buscar en la base de datos NCBI los valores de sobreexpresión de los genes regulados ya sea negativa o positivamente
             
     
 CATEGORY:
@@ -29,7 +27,7 @@ USAGE:
 
         % python entrez_busqueda.py -i ../results/genes_regulacion_negativa.txt -o ../results/genes_entrez.txt -c 10 -s menor -e ednakrz@lcg.unam.mx -d gene
 
-        % python entrez_busqueda.py -i ../results/genes_regulacion_negativa.txt -o ../results/genes_entrez.txt -c 10 -s mayor -e ednakrz@lcg.unam.mx -d gene
+        % python entrez_busqueda.py -i ../results/genes_regulacion_positiva.txt -o ../results/genes_entrez.txt -c 10 -s mayor -e ednakrz@lcg.unam.mx -d gene
 
 PARAMETERS:
 
@@ -199,8 +197,6 @@ def guardar_genes(lista_busqueda, output_file):
 #=======================================================================#
 #===                             Main                                ===#
 #=======================================================================#
-
-
 
 if __name__ == "__main__":
     main()
