@@ -125,7 +125,44 @@ DESeq2 es una herramienta que utiliza métodos estadísticos para analizar y nor
 ## Resultados
  
 
-<!-- ### X. Pregunta 
+### ¿Cuántos genes están regulados de forma positiva y negativa en el grupo de vuelo en comparación con el grupo de control terrestre?
+
+OBJETIVO: Realizar un script que permita clasificar los genes de acuerdo a su regulación considerando el log2Fold Change.
+
+Archivo(s):     
+
+Algoritmo: 
+
+1. 
+
+Solución: Describir paso a paso la solución, incluyendo los comandos correspondientes
+
+```bash
+
+```
+
+-->
+
+### ¿Qué vías biológicas y categorías funcionales se encuentran sobrerrepresentadas entre los genes regulados positivamente y negativamente en la retina murina en respuesta a la exposición al vuelo espacial?
+
+OBJETIVO: Realizar un análisis de sobrerrepresentación (ORA) para los genes regulados positivamente y negativamente, lo cual permitirá identificar las vías y respuestas biológicas favorecidas como consecuencia de la exposición a las condiciones espaciales.
+
+Archivo(s):     
+
+Algoritmo: 
+
+1. 
+
+Solución: Describir paso a paso la solución, incluyendo los comandos correspondientes
+
+```bash
+
+```
+
+-->
+
+### ¿Cómo obtener información adicional sobre genes de interés?
+OBJETIVO: Hacer uso de herramientas como Entrez para obterner información de los genes más importantes.
 
 Archivo(s):     
 
@@ -142,16 +179,11 @@ Solución: Describir paso a paso la solución, incluyendo los comandos correspon
 -->
 
 
-
-
 ## Análisis y Conclusiones
 
  <!-- Describir todo lo que descubriste en este análisis -->
 
 
 ## Referencias
-<!-- Registrar todas las referencias consultadas. Se sugiere formato APA. Ejemplo:
- 
- [1] Frederick R. Blattner et al., The Complete Genome Sequence of <i>Escherichia coli</i> K-12.Science277,1453-1462(1997).DOI:10.1126/science.277.5331.1453
- 
- -->
+Overbey, E. G., Abraham, W., Seta Stanbouly, Nishiyama, N. C., Roque-Torres, G. D., Pecaut, M. J., Zawieja, D. C., Wang, C., Willey, J. S., Delp, M. D., Hardiman, G., & Mao, X. W. (2019). Spaceflight influences gene expression, photoreceptor integrity, and oxidative stress-related damage in the murine retina. Scientific Reports, 9(1). https://doi.org/10.1038/s41598-019-49453-x
+
