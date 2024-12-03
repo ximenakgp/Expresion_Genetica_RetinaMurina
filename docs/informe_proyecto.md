@@ -136,20 +136,18 @@ Archivo(s):
             
 - Archivo(s) de salida:
             Los resultados se guardarán en archivos separados para genes regulados positivamente y negativamente.
+  
 **Algoritmo:** 
 
-1. Leer el archivo de entrada.
-El archivo se lee como un DataFrame utilizando pandas.
+1. Leer el archivo de entrada:El archivo se lee como un DataFrame utilizando pandas.
 
-3. Filtrar genes según el valor log2FoldChange.
+2. Filtrar genes según el valor log2FoldChange:
 log2FoldChange > 0: Genes regulados positivamente.
 log2FoldChange < 0: Genes regulados negativamente.
 
-3. Guardar resultados en archivos.
-Los genes filtrados se guardan en archivos separados con nombres que indican el tipo de regulación.
+3. Guardar resultados en archivos: Los genes filtrados se guardan en archivos separados con nombres que indican el tipo de regulación.
 
-4. Imprimir estadísticas:
-Mostrar el número total de genes regulados positivamente y negativamente
+4. Imprimir estadísticas: Mostrar el número total de genes regulados positivamente y negativamente
 
 **Solución:**
 Análisis de genes regulados positivamente
@@ -172,6 +170,7 @@ python analisis_regulacion.py \
 
 **Desglose del código**
 1. Argumentos desde la línea de comandos
+
 La función obtener_argumentos permite al usuario proporcionar:
 
 -i (ruta al archivo de entrada).
@@ -180,24 +179,30 @@ La función obtener_argumentos permite al usuario proporcionar:
 -r (tipo de regulación, positiva o negativa).
 
 2. Leer el archivo
+
 La función leer_archivo carga el archivo de entrada como un DataFrame utilizando pandas. Esto permite una manipulación eficiente de los datos tabulares.
 
 3. Filtrar genes
+   
 La función filtrar_genes aplica un filtro basado en el valor de log2FoldChange:
 
 df[df[columna] > 0] para regulación positiva.
 df[df[columna] < 0] para regulación negativa.
 
 4. Guardar resultados
+
 La función guardar_genes guarda los genes filtrados en un archivo TSV utilizando pandas.
 
 **Consideraciones:**
 
 Formato del archivo: El script asume que el archivo de entrada está separado por tabulaciones (\t). Si el archivo usa otro separador, actualiza el argumento sep en leer_archivo.
+
 Validación: Si el archivo de entrada no contiene la columna log2FoldChange, el script imprimirá un error y terminará.
+
 Automatización: Puedes crear un script adicional para ejecutar ambos análisis (positivo y negativo) y consolidar los resultados si es necesario.
 
-**Resultados**
+**Resultados:**
+
 Se encontraron 286 genes regulados positivamente.
 Se encontraron 314 genes regulados negativamente.
 
@@ -235,6 +240,7 @@ Solución (Pasos detallados):
 % python gen_ontology_ora.py [-h] -i INPUT -o OUTPUT [-g ORGANISMO]
 ```
 **Descripciones de las funciones**
+
 obtener_argumentos()
 Maneja los argumentos proporcionados en la línea de comandos para configurar el análisis, como el archivo de entrada, archivo de salida y el organismo.
 
@@ -254,11 +260,109 @@ main
 Gestiona el flujo principal del programa, integrando la carga de genes, análisis GO, extracción de términos significativos, generación de gráficos y guardado de resultados.
 
 **Consideraciones:**
-Formato del archivo:El archivo de entrada debe ser tabular (.csv o .tsv) y contener una columna llamada RefSeq Symbol con nombres válidos de genes.
-Validación:Verifica que los genes correspondan al organismo especificado y que la conexión a internet esté activa para el análisis GO mediante G:Profiler.
-Automatización:Asegúrate de tener instaladas las dependencias necesarias (pandas, gprofiler-official) y que el módulo personalizado graficas_GO esté disponible para ejecutar correctamente el análisis y generar gráficos.
+- Formato del archivo: El archivo de entrada debe ser tabular (.csv o .tsv) y contener una columna llamada RefSeq Symbol con nombres válidos de genes.
+- Validación: Verifica que los genes correspondan al organismo especificado y que la conexión a internet esté activa para el análisis GO mediante G:Profiler.
+- Automatización: Asegúrate de tener instaladas las dependencias necesarias (pandas, gprofiler-official) y que el módulo personalizado graficas_GO esté disponible para ejecutar correctamente el análisis y generar gráficos.
 
-**Resultados**
+**Resultados:**
+- Positivo: 
+Genes regulados encontrados: 286
+Se encontraron 97 términos GO:BP, 54 GO:MF, 41 GO:CC, 1 vías de señalización (KEGG), y 0 categorías fenotípicas (HP) con un FDR menor a 0.05.
+Resultados del análisis GO: 193 categorías enriquecidas encontradas.
+Términos más significativos por fuente:
+
+GO:BP:
+  response to abiotic stimulus
+  cellular response to stress
+  response to unfolded protein
+  apoptotic process
+  response to topologically incorrect protein
+  cell death
+  programmed cell death
+  response to light stimulus
+  protein folding
+  regulation of biological process
+
+GO:MF:
+  ion binding
+  small molecule binding
+  binding
+  protein-folding chaperone binding
+  metal ion binding
+  heat shock protein binding
+  protein binding
+  cation binding
+  Hsp70 protein binding
+  catalytic activity
+
+GO:CC:
+  cytoplasm
+  membrane-bounded organelle
+  intracellular anatomical structure
+  organelle
+  intracellular membrane-bounded organelle
+  nucleoplasm
+  intracellular organelle
+  cytosol
+  nucleus
+  organelle lumen
+
+KEGG:
+  Antigen processing and presentation
+
+HP:
+- Negativo: 
+Genes regulados encontrados: 314
+Se encontraron 418 términos GO:BP, 65 GO:MF, 127 GO:CC, 2 vías de señalización (KEGG), y 5 categorías fenotípicas (HP) con un FDR menor a 0.05.
+Resultados del análisis GO: 617 categorías enriquecidas encontradas.
+Términos más significativos por fuente:
+
+GO:BP:
+  system development
+  multicellular organism development
+  neurogenesis
+  biological regulation
+  nervous system development
+  anatomical structure development
+  localization
+  transport
+  regulation of biological process
+  cellular process
+
+GO:MF:
+  protein binding
+  binding
+  adenyl ribonucleotide binding
+  ATP binding
+  adenyl nucleotide binding
+  enzyme binding
+  purine ribonucleotide binding
+  ribonucleotide binding
+  purine ribonucleoside triphosphate binding
+  purine nucleotide binding
+
+GO:CC:
+  cytoplasm
+  neuron projection
+  cellular anatomical entity
+  cell projection
+  organelle
+  plasma membrane bounded cell projection
+  intracellular anatomical structure
+  synapse
+  membrane-bounded organelle
+  cell junction
+
+KEGG:
+  Phototransduction
+  Thyroid hormone signaling pathway
+
+HP:
+  Progressive night blindness
+  Macular degeneration
+  Retinal degeneration
+  Abnormal visual electrophysiology
+  Peripheral visual field loss
 ![image](https://github.com/ximenakgp/Expresion_Genetica_RetinaMurina/blob/main/src/graphs/GO_BP_top_terms.png)
 
 ### ¿Cómo obtener información adicional sobre genes de interés?
@@ -284,16 +388,12 @@ python entrez_busqueda.py -i genes_expresion.txt -o resultados_entrez.txt -c 10 
 ```
 
 **Consideraciones:**
-Formato de los archivos: El archivo debe estar separado por tabulaciones (.tsv) y contener las columnas necesarias, especialmente RefSeq Symbol y pvalue.
-Validación:
-Verificar la existencia de las columnas esperadas antes de ejecutar el script.
-Asegurar que los genes filtrados sean válidos y que el correo electrónico proporcionado permita acceso a Entrez.
-Automatización:
-Instalación previa de las librerías necesarias: Biopython y pandas.
-Definición clara de los parámetros mediante argparse para permitir flexibilidad en las búsquedas.
+- Formato de los archivos: El archivo debe estar separado por tabulaciones (.tsv) y contener las columnas necesarias, especialmente RefSeq Symbol y pvalue.
+- Validación: Verificar la existencia de las columnas esperadas antes de ejecutar el script. Asegurar que los genes filtrados sean válidos y que el correo electrónico proporcionado permita acceso a Entrez.
+- Automatización: Instalación previa de las librerías necesarias: Biopython y pandas. Definición clara de los parámetros mediante argparse para permitir flexibilidad en las búsquedas.
 Manejo de excepciones para capturar errores en la lectura de archivos o en las conexiones a la base de datos.
 
-**Resultados:** Se optendrán los genes mayor o menor representados, como sea el caso que se haya elejido, y se obtendrá la información general que proporcione la base de datos en la que se haya buscado coincidencia. 
+**Resultados:** Se obtendrán los genes mayor o menor representados, como sea el caso que se haya elejido, y se obtendrá la información general que proporcione la base de datos en la que se haya buscado coincidencia. 
 
 Ejp: 
 1. A12M1
