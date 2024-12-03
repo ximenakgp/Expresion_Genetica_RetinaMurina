@@ -34,10 +34,9 @@ Con el estudio de estos datos se busca contribuir a la disminución de la falta 
 
 En este contexto, se plantean tres principales preguntas de investigación prioritarias:
 
-> 1.¿Cuántos genes están regulados de forma positiva y negativa en el grupo de vuelo en comparación con el grupo de control terrestre?
+> 1. ¿Cuántos genes están regulados de forma positiva y negativa en el grupo de vuelo en comparación con el grupo de control terrestre?
 > 2. ¿Qué vías biológicas y categorías funcionales se encuentran sobrerrepresentadas entre los genes regulados positivamente y negativamente en la retina murina en respuesta a la exposición al vuelo espacial?
 > 3. ¿Cómo obtener información adicional sobre genes de interés?
-
 
 Además, se explorará 1 pregunta adicional que complementa y enriquece el enfoque del proyecto:
  
