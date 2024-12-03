@@ -265,7 +265,104 @@ Gestiona el flujo principal del programa, integrando la carga de genes, análisi
 - Automatización: Asegúrate de tener instaladas las dependencias necesarias (pandas, gprofiler-official) y que el módulo personalizado graficas_GO esté disponible para ejecutar correctamente el análisis y generar gráficos.
 
 **Resultados:**
+- Positivo: 
+Genes regulados encontrados: 286
+Se encontraron 97 términos GO:BP, 54 GO:MF, 41 GO:CC, 1 vías de señalización (KEGG), y 0 categorías fenotípicas (HP) con un FDR menor a 0.05.
+Resultados del análisis GO: 193 categorías enriquecidas encontradas.
+Términos más significativos por fuente:
 
+GO:BP:
+  response to abiotic stimulus
+  cellular response to stress
+  response to unfolded protein
+  apoptotic process
+  response to topologically incorrect protein
+  cell death
+  programmed cell death
+  response to light stimulus
+  protein folding
+  regulation of biological process
+
+GO:MF:
+  ion binding
+  small molecule binding
+  binding
+  protein-folding chaperone binding
+  metal ion binding
+  heat shock protein binding
+  protein binding
+  cation binding
+  Hsp70 protein binding
+  catalytic activity
+
+GO:CC:
+  cytoplasm
+  membrane-bounded organelle
+  intracellular anatomical structure
+  organelle
+  intracellular membrane-bounded organelle
+  nucleoplasm
+  intracellular organelle
+  cytosol
+  nucleus
+  organelle lumen
+
+KEGG:
+  Antigen processing and presentation
+
+HP:
+- Negativo: 
+Genes regulados encontrados: 314
+Se encontraron 418 términos GO:BP, 65 GO:MF, 127 GO:CC, 2 vías de señalización (KEGG), y 5 categorías fenotípicas (HP) con un FDR menor a 0.05.
+Resultados del análisis GO: 617 categorías enriquecidas encontradas.
+Términos más significativos por fuente:
+
+GO:BP:
+  system development
+  multicellular organism development
+  neurogenesis
+  biological regulation
+  nervous system development
+  anatomical structure development
+  localization
+  transport
+  regulation of biological process
+  cellular process
+
+GO:MF:
+  protein binding
+  binding
+  adenyl ribonucleotide binding
+  ATP binding
+  adenyl nucleotide binding
+  enzyme binding
+  purine ribonucleotide binding
+  ribonucleotide binding
+  purine ribonucleoside triphosphate binding
+  purine nucleotide binding
+
+GO:CC:
+  cytoplasm
+  neuron projection
+  cellular anatomical entity
+  cell projection
+  organelle
+  plasma membrane bounded cell projection
+  intracellular anatomical structure
+  synapse
+  membrane-bounded organelle
+  cell junction
+
+KEGG:
+  Phototransduction
+  Thyroid hormone signaling pathway
+
+HP:
+  Progressive night blindness
+  Macular degeneration
+  Retinal degeneration
+  Abnormal visual electrophysiology
+  Peripheral visual field loss
 ![image](https://github.com/ximenakgp/Expresion_Genetica_RetinaMurina/blob/main/src/graphs/GO_BP_top_terms.png)
 
 ### ¿Cómo obtener información adicional sobre genes de interés?
