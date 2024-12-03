@@ -10,7 +10,10 @@ AUTHORS:
         Karla Ximena González Platas
 
 DESCRIPTION:
-            
+          El código realiza un análisis de sobrerrepresentación (Over-Representation Analysis, ORA) utilizando dat
+          os de expresión génica. Este tipo de análisis se enfoca en determinar si ciertos términos biológicos, co
+          mo procesos de ontología génica (GO), rutas metabólicas (KEGG) o categorías fenotípicas (HP), están repr
+          esentados significativamente en un conjunto de genes regulados.  
     
 CATEGORY:
         Proyecto de Biopython: Expresion_Genetica_RetinaMurina
