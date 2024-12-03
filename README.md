@@ -7,6 +7,7 @@ El presente proyecto tiene como objetivo analizar la influencia de los vuelos es
 En este contexto, se plantean tres principales preguntas de investigación prioritarias:
 
 1. ¿Cuántos genes están regulados de forma positiva y negativa en el grupo de vuelo en comparación con el grupo de control terrestre?
+
 OBJETIVO: Realizar un script que permita clasificar los genes de acuerdo a su regulación considerando el log2Fold Change.
  
 2. ¿Qué vías biológicas y categorías funcionales se encuentran sobrerrepresentadas entre los genes regulados positivamente y negativamente en la retina murina en respuesta a la exposición al vuelo espacial?  
@@ -14,6 +15,7 @@ OBJETIVO: Realizar un script que permita clasificar los genes de acuerdo a su re
 OBJETIVO: Realizar un análisis de sobrerrepresentación (ORA) para los genes regulados positivamente, lo cual permitirá identificar las vías y respuestas biológicas favorecidas como consecuencia de la exposición a las condiciones espaciales.
     
 3. ¿De qué manera obtenemos información sobre los genes que nos interesa?
+
 OBJETIVO: Hacer uso de herramientas como Entrez para obterner información de los genes más importantes.
 
 Además, se explorará 1 pregunta adicional que complementan y enriquecen el enfoque del proyecto:
@@ -26,23 +28,20 @@ Estas preguntas de investigación contribuirán a comprender las adaptaciones de
 ## Uso
 
 ```
-python nombre_programa
+python nombre_script.py
 ```
 
 ## Salida
 
-El script imprimirá --------- en la consola. 
+El script imprimirá las categorías mas representadas o generará archivos con información relevante  
 
 ## Control de errores
 
-Si el archivo proporcionado no existe, el script generará un mensaje de error. Del mismo modo, si el archivo contiene entradas que no son ---------, el script generará un error.
+Si el archivo proporcionado no existe, el script generará un mensaje de error. Del mismo modo, si el archivo contiene entradas que no son las adecuadas, el script generará un error.
 
 ## Pruebas
 
-El script incluye un conjunto de pruebas unitarias. Puede ejecutar estas pruebas con:
-
-```
-```
+El script incluye un conjunto de pruebas unitarias almacenadas en la carpeta test.
 
 ## Datos
 
@@ -66,10 +65,6 @@ Los datos de entrada fueron descargados desde NCBI
 
 Para mayor información de los datos, favor de consultar el **informe del proyecto** ubicado en este repositorio GitHub. 
 
-## Código fuente
-
-```
-```
 
 ## Términos de uso
 
