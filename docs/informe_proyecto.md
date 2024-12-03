@@ -255,104 +255,118 @@ Archivo de salida: resultados_ora.csv (almacena los resultados del análisis de 
 
 **Resultados:**
 
-- Positivo: 
+- Positivo:
+
 Genes regulados encontrados: 286
+
 Se encontraron 97 términos GO:BP, 54 GO:MF, 41 GO:CC, 1 vías de señalización (KEGG), y 0 categorías fenotípicas (HP) con un FDR menor a 0.05.
+
 Resultados del análisis GO: 193 categorías enriquecidas encontradas.
+
 Términos más significativos por fuente:
 
 GO:BP:
-  response to abiotic stimulus
-  cellular response to stress
-  response to unfolded protein
-  apoptotic process
-  response to topologically incorrect protein
-  cell death
-  programmed cell death
-  response to light stimulus
-  protein folding
-  regulation of biological process
+  - response to abiotic stimulus
+  - cellular response to stress
+  - response to unfolded protein
+  - apoptotic process
+  - response to topologically incorrect protein
+  - cell death
+  - programmed cell death
+  - response to light stimulus
+  - protein folding
+  - regulation of biological process
 
 GO:MF:
-  ion binding
-  small molecule binding
-  binding
-  protein-folding chaperone binding
-  metal ion binding
-  heat shock protein binding
-  protein binding
-  cation binding
-  Hsp70 protein binding
-  catalytic activity
+  - ion binding
+  - small molecule binding
+  - binding
+  - protein-folding chaperone binding
+  - metal ion binding
+  - heat shock protein binding
+  - protein binding
+  - cation binding
+  - Hsp70 protein binding
+  - catalytic activity
 
 GO:CC:
-  cytoplasm
-  membrane-bounded organelle
-  intracellular anatomical structure
-  organelle
-  intracellular membrane-bounded organelle
-  nucleoplasm
-  intracellular organelle
-  cytosol
-  nucleus
-  organelle lumen
+  - cytoplasm
+  - membrane-bounded organelle
+  - intracellular anatomical structure
+  - organelle
+  - intracellular membrane-bounded organelle
+  - nucleoplasm
+  - intracellular organelle
+  - cytosol
+  - nucleus
+  - organelle lumen
 
 KEGG:
   Antigen processing and presentation
 
 HP:
-- Negativo: 
+
+- Negativo:
+
 Genes regulados encontrados: 314
+
 Se encontraron 418 términos GO:BP, 65 GO:MF, 127 GO:CC, 2 vías de señalización (KEGG), y 5 categorías fenotípicas (HP) con un FDR menor a 0.05.
+
 Resultados del análisis GO: 617 categorías enriquecidas encontradas.
+
 Términos más significativos por fuente:
 
 GO:BP:
-  system development
-  multicellular organism development
-  neurogenesis
-  biological regulation
-  nervous system development
-  anatomical structure development
-  localization
-  transport
-  regulation of biological process
-  cellular process
+
+  - system development
+  - multicellular organism development
+  - neurogenesis
+  - biological regulation
+  - nervous system development
+  - anatomical structure development
+  - localization
+  - transport
+  - regulation of biological process
+  - cellular process
 
 GO:MF:
-  protein binding
-  binding
-  adenyl ribonucleotide binding
-  ATP binding
-  adenyl nucleotide binding
-  enzyme binding
-  purine ribonucleotide binding
-  ribonucleotide binding
-  purine ribonucleoside triphosphate binding
-  purine nucleotide binding
+
+  - protein binding
+  - binding
+  - adenyl ribonucleotide binding
+  - ATP binding
+  - adenyl nucleotide binding
+  - enzyme binding
+  - purine ribonucleotide binding
+  - ribonucleotide binding
+  - purine ribonucleoside triphosphate binding
+  - purine nucleotide binding
 
 GO:CC:
-  cytoplasm
-  neuron projection
-  cellular anatomical entity
-  cell projection
-  organelle
-  plasma membrane bounded cell projection
-  intracellular anatomical structure
-  synapse
-  membrane-bounded organelle
-  cell junction
+
+  - cytoplasm
+  - neuron projection
+  - cellular anatomical entity
+  - cell projection
+  - organelle
+  - plasma membrane bounded cell projection
+  - intracellular anatomical structure
+  - synapse
+  - membrane-bounded organelle
+  - cell junction
 
 KEGG:
-  Phototransduction
-  Thyroid hormone signaling pathway
+
+  - Phototransduction
+  - Thyroid hormone signaling pathway
 
 HP:
-  Progressive night blindness
-  Macular degeneration
-  Retinal degeneration
-  Abnormal visual electrophysiology
-  Peripheral visual field loss
+
+  - Progressive night blindness
+  - Macular degeneration
+  - Retinal degeneration
+  - Abnormal visual electrophysiology
+  - Peripheral visual field loss
 
   Gráfica de los procesos biológicos más representativos de los genes regulados positivamente:
   
