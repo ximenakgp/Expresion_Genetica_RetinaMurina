@@ -45,6 +45,7 @@ Dado que de los 600 genes expresados ​​diferencialmente (DEG), 29 son factor
 
 Estas preguntas de investigación contribuirán a comprender las adaptaciones de la retina murina frente a los desafíos del entorno espacial, con especial énfasis en los genes regulados positivamente y sus funciones biológicas.
 
+Como parte de los desafíos que tuvimos al realizar este proyecto, se encuentra el hecho de que ya no pudimos realizar la pregunta 4. 
 
 ## Metodología
 
@@ -408,6 +409,11 @@ ID: 4
 En este proyecto, se analizaron datos de expresión génica diferencial y se obtuvo información relevante sobre los genes más significativos utilizando herramientas bioinformáticas. El trabajo se enfocó en crear scripts que permitieran clasificar los genes de acuerdo a su regulación (positiva o negativa), hacer un análisis de sobrerrepresentación (ORA) de ontología génica (GO), vías y categorías fenotípicas y graficar las categorías mas representadas. Los resultados obtenidos indican que los genes regulados positivamente están asociados con importantes procesos biológicos como:  {response to abiotic stimulus, cellular response to stress, apoptotic process, cell death, programmed cell death, response to light stimulus}. El resultado anterior coincide con estudios realizados previamente que indican que estos procesos son los que desencadenan un daño oxidativo en la retina que genera apoptosis en este tejido. 
 Además, el hecho de que se hayan identificado 5 categorías fenotípicas sugiere que los genes estudiados están relacionados con alteraciones en la función y estructura de la retina, lo cual tiene un impacto directo en la visión. Estas categorías fenotípicas representan manifestaciones clínicas o síntomas comunes en trastornos genéticos o enfermedades oculares específicos.
 
+### Conclusión de lo que aprendimos: 
+
+A través de la realización de este proyecto pudimos aprender nuevas funciones de python y Biopython , aprendimos a gestionar y organizar mejor el trabajo colaborativo utilizando herramientas como la plataforma Github, la cuál nos permitió separar las tareas por issues y proyecto, lo que facilitó la idea de lo que cada integrante tenía que hacer.
+Al igual que aprendimos sobre la gestión de la información, al embarcarnos en la búsqueda de bases de datos, pudimos aprender a discernir sobre la información que nos podría ayudar y cuál es la que tenemos que filtrar.
+Por otro lado, también aprendimos sobre la implementación de búsqueda a través de línea de comando con herramientas como Entrez, para obtener información en las distintas bases de datos de NCBI.
 
 ## Referencias
 Overbey, E. G., Abraham, W., Seta Stanbouly, Nishiyama, N. C., Roque-Torres, G. D., Pecaut, M. J., Zawieja, D. C., Wang, C., Willey, J. S., Delp, M. D., Hardiman, G., & Mao, X. W. (2019). Spaceflight influences gene expression, photoreceptor integrity, and oxidative stress-related damage in the murine retina. Scientific Reports, 9(1). https://doi.org/10.1038/s41598-019-49453-x
