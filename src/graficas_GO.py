@@ -1,4 +1,26 @@
+'''
+NAME: 
+        Clase para crear y guardar las gráficas de los términos GO más significativos.
+    
+VERSION: 
+        1
+    
+AUTHORS: 
+        Edna Karen Rivera Zagal 
+        Karla Ximena González Platas
 
+DESCRIPTION:
+            Este script contiene una clase que es llamada en el script gene_ontology_ora 
+            para poder generar las gráficas de las categorias más representativas. 
+    
+CATEGORY:
+        Proyecto de Biopython: Expresion_Genetica_RetinaMurina
+
+USAGE: 
+        EXAMPLE:
+        % python graficas_GO.py
+            
+'''
 
 # =========================================================================== 
 # =                            Imports 
@@ -73,9 +95,8 @@ class GraficadorTopTerminos:
             output_file = os.path.join(self.output_graph_dir, f"{categoria.replace(':', '_')}_top_terms.png")
             print(f"Guardando gráfica en: {output_file}")
             plt.savefig(output_file)
-            plt.show()
+            plt.show() # Utilizar este parametro solo si quiere que las graficas generadas se muestren en su interfaz al ejecutar el script gene_ontology_ora.py
             plt.close()
-
 
 # Bloque principal para pruebas
 if __name__ == "__main__":
