@@ -1,4 +1,4 @@
-# Casos de prueba o escenarios
+# Casos de prueba o escenarios *analisis_regulacion.py*
 Este documento describe los casos de prueba para el script de Python *analisis_regulacion.py* desarrollado para filtrar los genes regulados según su cambio de expresión "log2foldchange", ya sea positiva o negativa, y guardarlos en un archivo de salida.
 
 Los casos de prueba se han diseñado teniendo en cuenta las diferentes funcionalidades del script así como los posibles errores que puedan surgir.
