@@ -1,4 +1,4 @@
-# Casos de prueba o escenarios
+# Casos de prueba o escenarios *entrez_busqueda.py*
 Este documento describe los casos de prueba para el script de Python *entrez_busqueda.py* desarrollado para buscar en las bases de datos NCBI los genes cuyos valores de sobreexpresión estén regulados ya sea negativa o positiva mente.
 
 Los casos de prueba se han diseñado teniendo en cuenta las diferentes funcionalidades del script así como los posibles errores que puedan surgir.
@@ -16,7 +16,7 @@ Entrada:
 - Archivo con genes y un valor de significancia (pvalue).
 - Parámetros básicos con significancia=mayor y cantidad=10.
 ```bash
-python entrez_busqueda.py -i entrada_valida.tsv -o salida_entrez.txt -c 10 -s mayor -e prueba@example.com -d gene
+python entrez_busqueda.py -i genes_regulacion_test.tsv -o salida_entrez.txt -c 10 -s mayor -e ednakrz@lcg.unam.mx -d gene
 ```
 Esperado:
 
@@ -29,7 +29,7 @@ Objetivo: Verificar si el script detecta la ausencia de la columna necesaria par
 Entrada:
 
 ```bash
-python entrez_busqueda.py -i archivo_sin_pvalue.tsv -o salida_fallo.txt -c 5 -s menor -e prueba@example.com -d gene
+python entrez_busqueda.py -i genes_regulacionWOPV.tsv -o salida_fallo.txt -c 5 -s menor -e ednakrz@lcg.unam.mx -d gene
 ```
 Esperado:
 
@@ -41,7 +41,7 @@ Objetivo: Validar cómo el script maneja archivos sin datos.
 Entrada:
 
 ```bash
-python entrez_busqueda.py -i archivo_vacio.tsv -o salida_vacia.txt -c 10 -s menor -e prueba@example.com -d gene
+python entrez_busqueda.py -i genes_regulacionWO.tsv -o salida_vacia.txt -c 10 -s menor -e ednakrz@lcg.unam.mx -d gene
 ```
 Esperado:
 
@@ -53,7 +53,7 @@ Objetivo: Manejar casos donde el número solicitado supera la cantidad de genes 
 Entrada:
 
 ```bash
-python entrez_busqueda.py -i pocos_genes.tsv -o salida_pocos_genes.txt -c 100 -s mayor -e prueba@example.com -d gene
+python entrez_busqueda.py -i genes_regulacion_test.tsv -o salida_pocos_genes.txt -c 100 -s mayor -e ednakrz@lcg.unam.mx -d gene
 ```
 Esperado:
 
@@ -62,10 +62,10 @@ Esperado:
 
 ## 5. Conexión fallida a Entrez
 Objetivo: Verificar el manejo de errores durante la conexión a Entrez.
-Entrada:
+Entrada: correo no valido 
 
 ```bash
-python entrez_busqueda.py -i entrada_valida.tsv -o salida_fallo_entrez.txt -c 5 -s menor -e prueba@example.com -d gene
+python entrez_busqueda.py -i genes_regulacion_test.tsv -o salida_fallo_entrez.txt -c 5 -s menor -e prueba@example.com -d gene
 ```
 Simulación:
 Desconectar la red o usar un correo no válido.
@@ -81,54 +81,31 @@ Objetivo: Probar el manejo de argumentos faltantes.
 Entrada:
 
 ```bash
-python entrez_busqueda.py -i entrada_valida.tsv -o salida_incompleta.txt -c 10
+python entrez_busqueda.py -i genes_regulacion_test.tsv -o salida_incompleta.txt -c 10
 ```
 Esperado:
 
 - Mensaje: "El parámetro '-s' es obligatorio."
 - El script no ejecuta la búsqueda.
 
-## 7. Archivo con valores no numéricos en pvalue
-Objetivo: Validar el manejo de datos corruptos.
-Entrada: Archivo con valores no numéricos en la columna pvalue.
 
-```bash
-python entrez_busqueda.py -i valores_no_numericos.tsv -o salida_no_numericos.txt -c 5 -s mayor -e prueba@example.com -d gene
-```
-Esperado:
-
-- Mensaje indicando error al intentar filtrar.
-- El script no realiza búsquedas ni genera salida.
-
-## 8. Archivo con delimitadores incorrectos
+## 7. Archivo con delimitadores incorrectos
 Objetivo: Probar archivos mal formateados (separados por comas).
 Entrada:
 
 ```bash
-python entrez_busqueda.py -i archivo_malformateado.csv -o salida_error.txt -c 5 -s menor -e prueba@example.com -d gene
+python entrez_busqueda.py -i genes_regulacion_test.csv -o salida_error.txt -c 5 -s menor -e ednakrz@lcg.unam.mx -d gene
 ```
 Esperado:
 
-- Mensaje: "Error al leer el archivo: [detalle del error]."
+- Mensaje: "Error al leer el archivo."
 
-## 9. Pruebas de rendimiento
-Objetivo: Validar la eficiencia del script con grandes volúmenes de datos.
-Entrada: Archivo con 100,000 genes y cantidad=500.
-
-```bash
-python entrez_busqueda.py -i archivo_grande.tsv -o salida_grande.txt -c 500 -s mayor -e prueba@example.com -d gene
-```
-Esperado:
-
-- Realiza la búsqueda y genera la salida correctamente.
-- Mensajes de progreso útiles si se implementan.
-
-## 10. Diferentes bases de datos
+## 8. Diferentes bases de datos
 Objetivo: Comprobar la funcionalidad con distintas bases de datos en Entrez.
 Entrada:
 
 ```bash
-python entrez_busqueda.py -i entrada_valida.tsv -o salida_variada.txt -c 5 -s menor -e prueba@example.com -d protein
+python entrez_busqueda.py -i genes_regulacion_test.tsv -o salida_variada.txt -c 5 -s menor -e ednakrz@lcg.unam.mx -d protein
 ```
 Esperado:
 
