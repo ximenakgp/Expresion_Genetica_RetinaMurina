@@ -1,4 +1,4 @@
-# Casos de prueba o escenarios
+# Casos de prueba o escenarios *grafias_GO.py*
 Este documento describe los casos de prueba para el script de Python *grafias_GO.py* desarrollado para crear y guardar las gráficas de los términos GO más significativos.
 
 Los casos de prueba se han diseñado teniendo en cuenta las diferentes funcionalidades del script así como los posibles errores que puedan surgir.
