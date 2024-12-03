@@ -293,7 +293,15 @@ Instalación previa de las librerías necesarias: Biopython y pandas.
 Definición clara de los parámetros mediante argparse para permitir flexibilidad en las búsquedas.
 Manejo de excepciones para capturar errores en la lectura de archivos o en las conexiones a la base de datos.
 
-**Resultados:** 
+**Resultados:** Se optendrán los genes mayor o menor representados, como sea el caso que se haya elejido, y se obtendrá la información general que proporcione la base de datos en la que se haya buscado coincidencia. 
+
+Ejp: 
+1. A12M1
+adenovirus-12 chromosome modification site 1C [Homo sapiens (human)]
+Other Designations: Adenovirus-12 chromosome modification site-1q1
+Chromosome: 1; Location: 1q42-q43
+This record was discontinued.
+ID: 4
 
 ## Análisis y Conclusiones
 
