@@ -259,6 +259,7 @@ Validación:Verifica que los genes correspondan al organismo especificado y que 
 Automatización:Asegúrate de tener instaladas las dependencias necesarias (pandas, gprofiler-official) y que el módulo personalizado graficas_GO esté disponible para ejecutar correctamente el análisis y generar gráficos.
 
 **Resultados**
+![image](https://github.com/ximenakgp/Expresion_Genetica_RetinaMurina/blob/main/src/graphs/GO_BP_top_terms.png)
 
 ### ¿Cómo obtener información adicional sobre genes de interés?
 OBJETIVO: Hacer uso de herramientas como Entrez para obterner información de los genes más importantes.
