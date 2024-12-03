@@ -32,17 +32,14 @@ Con el estudio de estos datos se busca contribuir a la disminución de la falta 
 
 ## Preguntas de investigación
 
-En este contexto, se plantean dos principales preguntas de investigación prioritarias: 
+En este contexto, se plantean tres principales preguntas de investigación prioritarias:
 
-> 1. ¿Qué procesos biológicos y funciones están alterados en los genes regulados positivamente en la retina murina durante la exposición al vuelo espacial, y cómo podrían estos cambios influir en la adaptación de la retina a las condiciones espaciales?
-Para responder a esta pregunta, se realizará una anotación funcional de los genes regulados positivamente, con el objetivo de identificar los procesos biológicos alterados y comprender cómo estos cambios impactan la expresión genética en la retina.
-> 2. ¿Qué vías biológicas y categorías funcionales se encuentran sobrerrepresentadas entre los genes regulados positivamente en la retina murina en respuesta a la exposición al vuelo espacial?
-Se llevará a cabo un análisis de sobrerrepresentación (ORA) para los genes regulados positivamente, lo cual permitirá identificar las vías y respuestas biológicas favorecidas como consecuencia de la exposición a las condiciones espaciales.
+> 1. ¿Cuántos genes están regulados de forma positiva y negativa en el grupo de vuelo en comparación con el grupo de control terrestre?
+> 2. ¿Qué vías biológicas y categorías funcionales se encuentran sobrerrepresentadas entre los genes regulados positivamente y negativamente en la retina murina en respuesta a la exposición al vuelo espacial?
+> 3. ¿Cómo obtener información adicional sobre genes de interés?
 
- Además, se explorarán dos preguntas adicionales que complementarán y enriquecerán el enfoque del proyecto:
-
- > 3. ¿Cuáles de los 75 genes asociados con la retinitis pigmentosa muestran una regulación positiva en la retina murina durante la exposición al vuelo espacial y qué implicaciones podrían tener estos genes para la progresión de esta enfermedad bajo condiciones espaciales?
-Esta pregunta permitirá evaluar si los genes vinculados con la retinitis pigmentosa se ven afectados por el entorno espacial, lo cual podría proporcionar nuevas perspectivas sobre la progresión de la enfermedad en este tipo de ambiente.
+Además, se explorará 1 pregunta adicional que complementa y enriquece el enfoque del proyecto:
+ 
  > 4. ¿Cuáles son los factores de transcripción expresados ​​diferencialmente (DETF) que están regulados positivamente y qué implicaciones tienen en la expresión genética de la retina murina?
 Dado que de los 600 genes expresados ​​diferencialmente (DEG), 29 son factores de transcripción, esta pregunta busca identificar cuáles de estos DETF están regulados positivamente y cómo podrían influir en la regulación general de la expresión genética en la retina bajo condiciones espaciales.
 
